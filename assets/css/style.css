@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+    --color: #40403F;
+}
+
+.login-text {
+    text-align: center;
+}
+
+.container {
+    margin-top: 3em;
+}
+
+.shop-logo {
+    /* background: url(../img/Logo.png), lightgray 50% / cover no-repeat; */
+    background: var(--color);
+}
+.btn {
+    color: var(--color);
+}
+
+
+.form-group .label-text,
+.person-icon {
+    font-size: 1.25rem;
+    
+    display: inline-block;
+}
