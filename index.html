@@ -1,44 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
+
+
+    <!-- Link css font -->
+    <link rel="stylesheet" href="./assets/font/Arima Madurai font/style.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Link css style -->
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
+
 <body>
     <header>
-        <div class="header-container">
-          <a href="#" class="header-logo">
-            <img src="./assets/img/logo.png" alt="" class="header-logo-image" />
-          </a>
-          <div class="group-1">
-            <div class="header-sreach">
-                
+        <div class="header-container grid ">
+            <a href="#" class="header-logo col l-12">
+                <img src="./assets/img/logo.png" alt="" class="header-logo-image" />
+            </a>
+
+            <div class="group-1 grid wide ">
+                <div class="row">
+                    <div class="header-search col l-10 c-6 m-6">
+                        <label for="search">
+                            <i class="ti-search"></i>
+                        </label>
+                        <input type="text" name="search" id="search">
+                    </div>
+
+                    <div class="header-guest col l-2 c-6 m-6 ">
+                        <a href="#" class="guest-cart">
+                            <i class="ti-shopping-cart"></i>
+                        </a>
+
+                        <a href="#" class="guest-user">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+                    </div>
+
+                </div>
             </div>
-            <div class="header-guest"></div>
-          </div>
 
 
-          <nav class="menu">
-            <li class="menu-item">
-              <a href="#" class="menu-link">Trang chủ</a>
-            </li>
-            <li class="menu-item">
-                <a href="#" class="menu-link">Giới thiệu</a>
-              </li>  <li class="menu-item">
-                <a href="#" class="menu-link">Sản phẩm</a>
-              </li>  <li class="menu-item">
-                <a href="#" class="menu-link">Ưu đãi</a>
-              </li>
-            </li>  <li class="menu-item">
-                <a href="#" class="menu-link">CSKH</a>
-              </li>
-          </ul>
+            <nav>
+                <div class="grid  ">
+                    <ul class="header-menu row ">
+                        <li class="header-menu-item col l-2-4  ">
+                            <a href="#" class="header-menu-link">Trang chủ</a>
+                        </li>
+                        <li class="header-menu-item col l-2-4 c-0">
+                            <a href="#" class="header-menu-link">Giới thiệu</a>
+                        </li>
+                        <li class="header-menu-item col l-2-4 c-0">
+                            <a href="#1" class="header-menu-link ">Sản phẩm</a>
+                            <ul class="header-submenu grid row ">
+                                <li class="header-submenu-item col l-4">
+                                    <a class="txt-product-header ">Chất liệu dây</a>
+                                    <ul class="header-minisubmenu">
+                                        <li class="header-minisubmenu-item">
+                                            <a class="txt-product">Dây kim loại</a>
+                                        </li>
+                                        <li class="header-minisubmenu-item">
+                                            <a class="txt-product">Dây da</a>
+                                        </li>
+                                        <li class="header-minisubmenu-item">
+                                            <a class="txt-product">Dây nhựa</a>
+                                        </li>
+                                        <li class="header-minisubmenu-item">
+                                            <a class="txt-product">Dây đờ mi</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header-submenu-item col l-4">
+                                    <a class="txt-product-header ">Thương hiệu</a>
+                                    <ul class="header-minisubmenu">
+                                        <li class="header-minisubmenu-item">
+                                            <a class="txt-product">Casio</a>
+                                        </li>
+                                        <li class="header-minisubmenu-item">
+                                            <a class="txt-product">Citizen</a>
+                                        </li>
+                                        <li class="header-minisubmenu-item">
+                                            <a class="txt-product">Doxa</a>
+                                        </li>
+                                        <li class="header-minisubmenu-item">
+                                            <a class="txt-product">Tissot</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header-submenu-item col l-4">
+                                    <a class="txt-product-header ">Các dòng đặc biệt</a>
+                                    <ul class="header-minisubmenu">
+                                        <li class="header-minisubmenu-item">
+                                            <a class="txt-product">Đồng hồ điện tử</a>
+                                        </li>
+                                        <li class="header-minisubmenu-item">
+                                            <a class="txt-product">Đồng hồ đính kim cương</a>
+                                        </li>
+                                        <li class="header-minisubmenu-item">
+                                            <a class="txt-product">Đồng hồ Thuỵ Sĩ</a>
+                                        </li>
 
-          <div class="">
-            <a href="#!">Contact Us</a>
-          </div>
-        </nav>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="header-menu-item col l-2-4 c-0">
+                            <a href="#" class="header-menu-link">Ưu đãi</a>
+                        </li>
+                        </li>
+                        <li class="header-menu-item col l-2-4 c-0">
+                            <a href="#" class="header-menu-link">CSKH</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+            </nav>
+        </div>
     </header>
+
+    <main>
+        <div class="container">
+            <div class="banner">
+
+                <img src="./assets/img/Sale/1.png" alt="Sale" class="banner-img">
+
+                <!-- <div class="banner-img col l-6">
+                        <img src="./assets/img/banner-images/1.png" alt="Clocks">
+                    </div>
+
+                    <div class="banner-product col l-6">
+                        <h3 class="banner-heading">
+                            August
+                        </h3>
+                        <p class="banner-about">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iure fuga architecto velit nam, non, consectetur error, ipsum obcaecati corporis reiciendis! Perspiciatis, deserunt voluptates provident beatae temporibus similique eos doloribus.
+                        </p>
+
+                    </div> -->
+
+
+            </div>
+
+            <div class=" container-product grid wide ">
+                
+                    <div class="collection">
+                        <p class="collection-about">Bộ sưu tập mới</p>
+                    </div>
+                    <div class="collection-male">
+                        <p class="collection-about">Nam</p>
+                    </div>
+                    <div class="collection-female">
+                        <p class="collection-about">Nữ</p>
+                    </div>
+                    <div class="collection-couple">
+                        <p class="collection-about">Cặp đôi</p>
+                    </div>
+           
+
+                </div>
+
+
+            <div class="brand-famous brand-container">
+                <h2 class="brand-heading">THƯƠNG HIỆU ĐỒNG HỒ NỔI TIẾNG</h2>
+                <div class="grid wide">
+                    <div class="row brand-row1">
+                        <a href="#" class="brand col l-2 m-4 c-12 "><img src="./assets/img/img-famous/Baby-G.webp" alt=""></a>
+                        <a href="#" class="brand col l-2 m-4 c-12"><img src="./assets/img/img-famous/Candino.webp" alt=""></a>
+                        <a href="#" class="brand col l-2 m-4 c-12"><img src="./assets/img/img-famous/Casio-1.webp" alt=""></a>
+                        <a href="#" class="brand col l-2 m-4 c-12"><img src="./assets/img/img-famous/Citizen-1.webp" alt=""></a>
+                        <a href="#" class="brand col l-2 m-4 c-12"><img src="./assets/img/img-famous/Citizen-1.webp" alt=""></a>
+                        <a href="#" class="brand col l-2 m-4 c-12"><img src="./assets/img/img-famous/Daniel-Wellington.webp"
+                                alt=""></a>
+                    </div>
+                    <div class="row brand-row2">
+                        <a href="#" class="brand col l-2 m-4 c-12"><img src="./assets/img/img-famous/Baby-G.webp" alt=""></a>
+                        <a href="#" class="brand col l-2 m-4 c-12"><img src="./assets/img/img-famous/Candino.webp" alt=""></a>
+                        <a href="#" class="brand col l-2 m-4 c-12"><img src="./assets/img/img-famous/Casio-1.webp" alt=""></a>
+                        <a href="#" class="brand col l-2 m-4 c-12"><img src="./assets/img/img-famous/Citizen-1.webp" alt=""></a>
+                        <a href="#" class="brand col l-2 m-4 c-12"><img src="./assets/img/img-famous/Citizen-1.webp" alt=""></a>
+                        <a href="#" class="brand col l-2 m-4 c-12"><img src="./assets/img/img-famous/Daniel-Wellington.webp"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="brand-switzerland brand-container">
+                <h2 class="brand-heading">THƯƠNG HIỆU ĐỒNG HỒ THỤY SĨ</h2>
+                <div class="grid wide">
+                    <div class="row brand-row1">
+                        <a href="#" class="brand col l-2 m-4 c-12"><img src="./assets/img/img-switzerland/Bulova.webp"
+                                alt=""></a>
+                        <a href="#" class="brand col l-2 m-4 c-12"><img src="./assets/img/img-switzerland/Certina.webp"
+                                alt=""></a>
+                        <a href="#" class="brand col l-2 m-4 c-12"><img src="./assets/img/img-switzerland/CK.webp" alt=""></a>
+                        <a href="#" class="brand col l-2 m-4 c-12"><img src="./assets/img/img-switzerland/Claude-Bernard.webp"
+                                alt=""></a>
+                        <a href="#" class="brand col l-2 m-4 c-12"><img src="./assets/img/img-switzerland/Doxa.webp" alt=""></a>
+                        <a href="#" class="brand col l-2 m-4 c-12"><img
+                                src="./assets/img/img-switzerland/Frederique-Constant.webp" alt=""></a>
+                    </div>
+
+                    <div class="row brand-row2">
+                        <a href="#" class="brand col l-2 m-4 c-12"><img src="./assets/img/img-switzerland/Longines.webp"
+                                alt=""></a>
+                        <a href="#" class="brand col l-2 m-4 c-12"><img src="./assets/img/img-switzerland/Mido.webp" alt=""></a>
+                        <a href="#" class="brand col l-2 m-4 c-12"><img src="./assets/img/img-switzerland/Rado.webp" alt=""></a>
+                        <a href="#" class="brand col l-2 m-4 c-12"><img src="./assets/img/img-switzerland/Tissot.webp"
+                                alt=""></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p class="shop-name">AUGUST</p>
+
+            <div class="footer-store">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col c-12 m-12 l-4 store-chain">
+                            <h3 class="footer-heading">Hệ thống cửa hàng</h3>
+                            <ul class="list-store">
+                                <li class="store-item">TP.Hồ Chí Minh</li>
+                                <li class="store-item">Hà Nội</li>
+                                <li class="store-item">Biên hoà - Bình Dương</li>
+                                <li class="store-item">Đà Nẵng</li>
+                            </ul>
+                        </div>
+                        <div class="col c-12 m-12 l-4 store-info">
+                            <h3 class="footer-heading">Thông tin</h3>
+
+                            <ul class="list-info">
+                                <li class="info-item">Thông tin liên hệ</li>
+                                <li class="info-item">Thanh toán - trả góp</li>
+                                <li class="info-item">Liên hệ đối tác doanh nghiệp</li>
+                                <li class="info-item">Vận chuyển &#38; Giao nhận</li>
+                            </ul>
+                        </div>
+                        <div class="col c-12 m-12 l-4 store-about ">
+                            <h3 class="footer-heading">Về chúng tôi</h3>
+
+                            <ul class="list-about">
+                                <li class="about-item">Thông tin liên hệ : abc&#64;gmail.com</li>
+                                <li class="about-item">Hotline: 00000000</li>
+                                <li class="about-item">
+                                    <i class="fa-brands fa-facebook"></i>   
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-tiktok"></i>
+                                    <i class="fa-brands fa-youtube"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-group2">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-3 c-12 store-policy">
+                            <h3 class="footer-heading">Chính sách</h3>
+
+                            <ul class="list-policy">
+                                <li class="policy-item">Chính sách đổi trả</li>
+                                <li class="policy-item">Chính sách bảo hành</li>
+                            </ul>
+                        </div>
+
+                        <div class="col l-9 c-12 store-time">
+                            <p class="time-about">Thời gian hoạt động 7:00 - 20:00</p>
+                            <p class="time-about">Xin cảm ơn và rất hân hạnh được phục vụ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <p id="copyright"> &copy; August 2023. All rights reserved</p>
+    </footer>
+
 </body>
+
 </html>

@@ -1,13 +1,32 @@
+/*todo Link font-family */
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100;200&family=Arizonia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
 
-* {
+
+
+
+html {
     font-family: 'Quicksand', sans-serif;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root {
+    --font: 'Quicksand', sans-serif;
+    --font-size: 0.8em;
+
     --color-background: #40403F;
-    --color-btn-google:  #dd4b39;
+    --text-color: #717170;
+    --text-white: #fff;
+    --text-color-hover: #EB2020;
+    --color-btn-google: #dd4b39;
 
     /* --color-btn-google: rgba(221, 209, 209, 0.32); */
     --color-btn-face: #3B5998;
@@ -30,10 +49,6 @@
     color: #FFF;
     text-align: center;
     font-family: 'Arizonia', cursive;
-}
-
-.btn {
-    /* color: var(--color); */
 }
 
 .btn-box-shadow {
@@ -66,7 +81,8 @@
     opacity: 0.4;
     color: #FFF;
 }
-.btn-google:hover{
+
+.btn-google:hover {
     background-color: var(--color-btn-google);
     opacity: 0.4;
     color: #FFF;
@@ -78,3 +94,261 @@
 .btn-ig:hover {
     opacity: 0.3;
 }
+
+
+/*todo CSS index.html  */
+.header-container {
+    color: var(--text-color);
+}
+
+.header-container a {
+    text-decoration: none;
+}
+
+.header-logo {
+    display: block;
+    text-align: center;
+}
+
+.group-1 {
+    font-size: 1.6em;
+    font-weight: 200;
+    margin-top: 2rem;
+}
+
+.group-1 .header-search input {
+    font-family: var(--font);
+    width: 20rem;
+    border: none;
+    border-bottom: #ccc solid 2px;
+    /* height: 2em; */
+    appearance: none;
+    font-size: 1em;
+}
+
+.group-1 .header-search input:focus-visible {
+    /* border: none; */
+    outline-offset: 0px;
+    outline: #fff
+}
+
+.group-1 .header-guest a {
+    color: var(--text-color);
+}
+
+.group-1 .header-guest .guest-cart,
+.guest-user {
+    margin: 0 8px;
+    padding: 0px 16px;
+    font-size: 1em;
+}
+
+/*todo CSS Header menu */
+
+.header-menu {
+    margin-top: 2em;
+    font-size: 1.6em;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-bottom: #ccc solid 1px;
+    width: 100%;
+}
+
+.header-menu-item {
+    list-style: none;
+    text-align: center;
+    padding: 8px;
+}
+
+.header-menu-item a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.header-menu .header-submenu {
+    background-color: #fff;
+    padding-top: 20px;
+    width: 100%;
+    line-height: 1.5;
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    box-shadow: 6px 10px 6px -6px rgba(0, 0, 0, 0.3);
+}
+
+.header-menu .header-submenu li {
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+.header-menu .header-menu-item:hover .header-submenu {
+    display: flex;
+}
+
+.header-menu .header-submenu .txt-product-header {
+    font-weight: bold;
+    line-height: 2.8em;
+}
+
+.header-menu .header-submenu .txt-product {
+    margin: 4px 0;
+}
+
+.header-menu .header-submenu>li:hover>a,
+.header-submenu .header-minisubmenu>li:hover>a,
+.header-menu>li:hover>a {
+    color: var(--text-color-hover);
+}
+
+/*todo Banner */
+
+main {
+    margin-top: 26px;
+}
+
+.banner {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.banner .banner-img {
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+}
+
+/*todo product */
+.container-product {
+    padding: 0 90px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    height: 700px;
+    color: var(--text-white);
+}
+
+.collection {
+    grid-row: 1/3;
+    background-image: url(../img/images/collection.jpg);
+}
+
+.collection-male {
+    background-image: url(../img/images/collection-male.jpg);
+}
+
+.collection-female {
+    background-image: url(../img/images/collection-female.jpg);
+}
+
+.collection-couple {
+    grid-column: 2 /4;
+    background-image: url(../img/images/collection-couple.jpg);
+}
+
+.collection,
+.collection-male,
+.collection-female,
+.collection-couple {
+    display: flex;
+    text-align: center;
+    flex-direction: column-reverse;
+    background-size: cover;
+    font-family: 'Arima Madurai Light';
+    font-size: 30px;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+.collection:hover,
+.collection-male:hover,
+.collection-female:hover,
+.collection-couple:hover {
+    scale: 103%;
+    transition: 300ms;
+}
+
+/*todo Brand  */
+.brand-switzerland {
+    margin: 2rem 0;
+}
+
+.brand-container img {
+    /* max-width: 16.66667%; */
+    object-fit: cover;
+    width: 100%;
+}
+
+.brand-container .brand-heading {
+    margin: 3rem 0;
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.brand-container .brand-row1 {
+    margin-bottom: 8px;
+}
+
+.brand-container .brand-row1 a:hover,
+.brand-row2 a:hover {
+    scale: 1.1;
+    transition: 100ms;
+}
+
+/*todo CSS Footer */
+footer {
+    background-color: var(--color-background);
+    color: var(--text-white);
+    font-size: 16px;
+}
+.footer-store{
+    border-bottom: #ccc 1px solid;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.footer-container .shop-name {
+    font-family: 'Rye';
+    font-size: 70px;
+    font-weight: 400;
+}
+.footer-container .footer-heading{
+    margin-bottom: 10px;
+}
+
+.footer-container li {
+    list-style: none;
+}
+.footer-container i{
+    font-size: 30px;
+    margin: 10px;
+}
+.footer-container .store-chain, .store-info , .store-about , .store-policy , .store-time{
+    line-height: 1.8;    
+}
+
+.footer-container .store-time {
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer-group2 {
+    margin-bottom: 20px;
+}
+
+footer #copyright {
+    text-align: center;
+    color: var(--text-white);
+    opacity: 0.4;
+    font-family: var(--font);
+}
+
+
+
+
