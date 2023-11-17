@@ -374,4 +374,9 @@ footer #copyright {
     text-transform: uppercase;
     padding: 10px 0;
 }
+.container-female .price-item , .container-male .price-item{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 3em;
+}
 
