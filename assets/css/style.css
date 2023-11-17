@@ -355,15 +355,19 @@ footer #copyright {
 
 .container-male,.container-female {
     margin: 2em 0;
+
 }
 .container-male img
 , .container-female img {
-    width: 80%;
+    width: 70%;
 }
 
 .container-male .male-item,
 .container-female .female-item {
     text-align: center;
+    padding: 4rem 4px;
+    position: relative;
+    
 }
 
 .container-male .male-heading
@@ -374,9 +378,22 @@ footer #copyright {
     text-transform: uppercase;
     padding: 10px 0;
 }
-.container-female .price-item , .container-male .price-item{
+.container-female .price-product , .container-male .price-product{
     font-weight: bold;
     font-size: 20px;
     line-height: 3em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
+.container-female .about-product , .container-male .about-product{
+    word-wrap: normal;
+    word-break: break-word;
+}
+.container-male .male-item:hover {
+    
+    box-shadow: rgba(0, 0, 0, 0.3) 1px -1px 9px 2px;
+    transition: 200ms;
+}
