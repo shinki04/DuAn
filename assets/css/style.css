@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100;200&family=Arizonia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
 
 
 
@@ -317,6 +317,7 @@ footer {
     font-family: 'Rye';
     font-size: 70px;
     font-weight: 400;
+    padding-top: 20px;
 }
 .footer-container .footer-heading{
     margin-bottom: 10px;
@@ -350,5 +351,27 @@ footer #copyright {
 }
 
 
+/*todo product-male  */
 
+.container-male,.container-female {
+    margin: 2em 0;
+}
+.container-male img
+, .container-female img {
+    width: 80%;
+}
+
+.container-male .male-item,
+.container-female .female-item {
+    text-align: center;
+}
+
+.container-male .male-heading
+, .container-female .female-heading{
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    line-height: 4em;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
 
