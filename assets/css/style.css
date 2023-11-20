@@ -6,6 +6,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
 
+@font-face {
+    font-family: BarlowCondensed-Regular;
+    src: url("../fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf")
+}
+
+
+@font-face {
+    font-family: Quicksand;
+    src: url("../fonts/Quicksand-VariableFont_wght.ttf")
+}
+
+@font-face {
+    font-family: Rye-Regular;
+    src: url("../fonts/Rye/Rye-Regular.ttf")
+}
+
 
 
 html {
@@ -34,7 +50,7 @@ html {
     --color-btn-ig: linear-gradient(to right, #8A3AB9, #E95950, #BC2A8D, #FCCC63, #FBAD50, #CD486B, #4C68D7);
 }
 
-.btn:hover{
+.btn:hover {
     opacity: 0.6;
 }
 
@@ -247,45 +263,68 @@ main {
 }
 
 /*todo CSS Footer */
+footer{
+    background-color: var(--color-background);
+    display: block;
+    color: #fff;
+}
 
-.footer-store{
+.footer-store {
     border-bottom: #ccc 1px solid;
     padding-bottom: 10px;
     margin-bottom: 20px;
+    margin-top: 2em;
 }
+
 .footer-container .shop-name {
     font-family: 'Rye';
     font-size: 70px;
     font-weight: 400;
     padding-top: 20px;
+    position: relative;
+    top: 1rem;
+    padding-bottom: 20px;
 }
-.footer-container .footer-heading{
+
+.footer-container .footer-heading {
     margin-bottom: 10px;
 }
 
 .footer-container li {
     list-style: none;
 }
-.footer-container i{
+
+.footer-container i {
     font-size: 30px;
     margin: 10px;
 }
-.footer-container .store-chain, .store-info , .store-about , .store-policy , .store-time{
-    line-height: 1.8;    
+
+.footer-container .store-chain,
+.store-info,
+.store-about,
+.store-policy,
+.store-time {
+    line-height: 1.8;
 }
 
 .footer-container .store-time {
     text-align: center;
     font-size: var(--font-size);
 }
+.footer-container .store-item , 
+.footer-container .about-item ,
+.footer-container .info-item {
+    padding-left: 10px;
+}
+
 
 .footer-group2 {
     margin-bottom: 20px;
 }
 
-footer #copyright {
+#copyright {
     text-align: center;
-    color: #000;
+    color: #fff;
     opacity: 0.4;
     font-family: var(--font);
 }
@@ -293,11 +332,13 @@ footer #copyright {
 
 /*todo product-male  */
 
-.container-male,.container-female {
+.container-male,
+.container-female {
     margin: 2em 0;
 }
-.container-male img
-, .container-female img {
+
+.container-male img,
+.container-female img {
     width: 70%;
 }
 
@@ -306,18 +347,20 @@ footer #copyright {
     text-align: center;
     padding: 4rem 4px;
     position: relative;
-    
+
 }
 
-.container-male .male-heading
-, .container-female .female-heading{
+.container-male .male-heading,
+.container-female .female-heading {
     font-family: 'Barlow', sans-serif;
     text-align: center;
     line-height: 4em;
     text-transform: uppercase;
     padding: 10px 0;
 }
-.container-female .price-product , .container-male .price-product{
+
+.container-female .price-product,
+.container-male .price-product {
     font-weight: bold;
     font-size: var(--font-size);
     line-height: 3em;
@@ -327,21 +370,23 @@ footer #copyright {
     left: 0;
 }
 
-.container-female .about-product , .container-male .about-product{
+.container-female .about-product,
+.container-male .about-product {
     word-wrap: normal;
     word-break: break-word;
 }
+
 .container-male .male-item:hover {
-    
+
     box-shadow: rgba(0, 0, 0, 0.3) 1px -1px 9px 2px;
     transition: 200ms;
 }
 
 /*todo Login.html */
 
-.container-back{
+.container-back {
     position: fixed;
-    top:0 ;
+    top: 0;
     left: 0;
     margin: 1em 1em;
     padding: 4px;
@@ -359,15 +404,15 @@ footer #copyright {
     color: var(--text-color);
 }
 
-.container-back .back-home .back-text{
+.container-back .back-home .back-text {
     display: inline;
     padding-left: 1vh;
 }
 
-.container-back .back-home:hover{
-    
-  transform: translateX(10px);
-    transition: all 0.9s ease-out ;
+.container-back .back-home:hover {
+
+    transform: translateX(10px);
+    transition: all 0.9s ease-out;
 }
 
 #main-wrapper {
@@ -375,9 +420,10 @@ footer #copyright {
     margin-top: 4rem;
 }
 
-.container-form .form-text{
+.container-form .form-text {
     text-align: center;
 }
+
 .container-form .form-heading {
     padding: 1rem 0;
     text-align: center;
@@ -386,7 +432,7 @@ footer #copyright {
 
 
 
-.form-group{
+.form-group {
     font-size: 1.2rem;
     margin: 20px 0;
 }
@@ -397,7 +443,7 @@ footer #copyright {
     user-select: none;
 }
 
-.form-group .label-form .icon ,
+.form-group .label-form .icon,
 .form-group .label-form .label-text {
     display: inline;
     padding: 0 4px;
@@ -413,48 +459,56 @@ footer #copyright {
     width: 90%;
 }
 
-.form-group .form-control::placeholder{
-    font-size: 1rem;    
+.form-group .form-control::placeholder {
+    font-size: 1rem;
 }
 
-.form-check ,
-.form-submit{
+.form-check,
+.form-submit {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     user-select: none;
     align-items: center;
 }
-.form-submit .submit-login , 
-.form-submit .submit-newAccount{
+
+.form-submit .submit-login,
+.form-submit .submit-newAccount {
     width: 16em;
     height: 4em;
     margin: 4em 0;
 }
-.form-submit .submit-login{
+
+.form-submit .submit-login {
     background-color: #ebebeb7d;
 }
+
 .form-submit .submit-newAccount {
     background-color: #000;
     color: var(--text-white);
 }
-.form-submit .submit-text{
+
+.form-submit .submit-text {
     font-size: 1rem;
     font-weight: bold;
     font-family: var(--font);
 }
+
 .form-submit .btn {
-   border: none;
-   cursor: pointer;
-   border-radius: 10px;
-   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.form-submit .btn:hover{
+
+.form-submit .btn:hover {
     scale: 1.1;
     transition: all 0.5s ease-in-out;
 }
 
-.or {text-align: center;}
+.or {
+    text-align: center;
+}
 
 .login-with {
     display: flex;
@@ -466,7 +520,6 @@ footer #copyright {
     display: block;
     width: 85%;
     text-align: left;
-    
     margin: 20px 0px 4px 0px;
     height: 46px;
     border: none;
@@ -475,9 +528,15 @@ footer #copyright {
     border-radius: 6px;
 }
 
+.login-with .btn-google,
+.login-with .btn-face,
+.login-with .btn-ig {
+    display: flex;
+    align-items: center;
+}
+
 .btn-google {
     background: var(--color-btn-google);
-    border: none;
 }
 
 .btn-face {
@@ -488,17 +547,22 @@ footer #copyright {
     background: var(--color-btn-ig);
 }
 
-.login-with .btn .login-icon, 
-.login-with .btn .login-text{
+.login-with .btn .login-text {
     display: inline-block;
     padding: 0 8px;
     font-size: 16px;
 }
-.login-with .btn .login-text{
+
+.login-with .login-icon {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.login-with .btn .login-text {
     font-family: var(--font);
 }
 
-.container-august{
+.container-august {
     background-color: var(--color-background);
     overflow: hidden;
 }
@@ -518,25 +582,82 @@ footer #copyright {
     font-size: 2em;
 }
 
-.august-notice, .about-us{
+.august-notice,
+.about-us {
     color: var(--text-white);
     margin-top: 8rem;
     text-align: center;
     font-size: 1rem;
 }
+
 .august-notice .notice-text {
     padding: 0 20px;
 }
+
 .august-notice .notice-text a {
     color: inherit;
     text-underline-offset: 4px;
 }
+
 .about-us a {
     text-decoration: none;
     color: inherit;
 }
-.about-us i{
+
+.about-us i {
     font-size: 2em;
     margin-left: 10px;
+}
 
+/*todo Voucher.html */
+
+.container-sale {
+
+}
+
+.container-sale img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+}
+
+.container-sale .sale-item {
+    background: rgba(238, 238, 238, 0.39);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 1em 0;
+}
+.container-sale .sale-item:hover {
+    scale: 1.02;
+
+    transition: all 0.2s linear;
+}
+
+.container-sale .sale-about {
+    text-align: center;
+    padding: 16px;
+}
+
+.container-sale .sale-heading {
+    font-family: Barlow Condensed;
+    color: var(--text-color-hover);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+.container-sale .sale-text 
+{
+    
+    font-size: 1.2em;
+    padding: 2rem;
+}
+.container-sale .useVoucher{
+    font-family: var(--font);
+    font-size: 1.2em;
+    width: 8em;
+    height: 3em;
+    border-radius: 10px;
+    background-color:#717170 ;
+    color: var(--text-white);
+    border: none;
 }
