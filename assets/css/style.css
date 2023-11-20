@@ -10,6 +10,7 @@
 
 html {
     font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
 }
 
 * {
@@ -220,7 +221,7 @@ main {
     height: 600px;
 }
 
-/*todo product */
+/*todo Product */
 .container-product {
     padding: 0 90px;
     display: grid;
@@ -396,4 +397,34 @@ footer #copyright {
     
     box-shadow: rgba(0, 0, 0, 0.3) 1px -1px 9px 2px;
     transition: 200ms;
+}
+
+/*todo Login.html */
+
+.container-back{
+    position: fixed;
+    top:0 ;
+    left: 0;
+    margin: 1em 1em;
+    padding: 4px;
+    font-size: 20px;
+}
+
+.container-back .back-home {
+    display: flex;
+    align-items: center;
+}
+
+.container-back a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.container-back .back-home .back-text{
+    display: inline;
+    padding-left: 1vh;
+}
+
+#main-wrapper {
+    position: relative;
 }
