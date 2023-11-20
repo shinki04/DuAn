@@ -311,12 +311,11 @@ footer{
     text-align: center;
     font-size: var(--font-size);
 }
-.footer-container .store-item , 
+/* .footer-container .store-item , 
 .footer-container .about-item ,
 .footer-container .info-item {
     padding-left: 10px;
-}
-
+} */
 
 .footer-group2 {
     margin-bottom: 20px;
