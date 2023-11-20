@@ -29,25 +29,130 @@
 
         </div>
     </header>
+    <!--* Begin: container  -->
     <div id="main-wrapper" class="container">
         <div class="grid wide">
             <div class="row no-gutters">
-                <div class="l-6 container-form">
-                    <h3 class=" ">Đăng Nhập</h3>
-                </div>
-            </div>
-            <div class="l-6 container-august">
+                <!--* Begin container-form -->
+                <div class="l-6 container-form ">
+                    <h2 class="form-heading">Đăng Nhập</h2>
+                    <p class="form-text">Chào mừng bạn đến với cửa hàng của chúng tôi</p>
+                    <p class="form-text">Vui lòng nhập email và mật khẩu để hoàn tất đăng nhập.</p>
+                    <!--* Begin form -->
+                    <form class="form" method="post">
+                        <div class="form-group">
+                            <label for="inputEmail" class="label-form">
+                                <i class="ti-user icon"></i>
+                                <p class="label-text">Email:</p>
+                            </label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Nhập email của bạn">
+                        </div>
 
+                        <div class="form-group">
+                            <label for="inputPassword" class="label-form">
+                                <i class="ti-lock icon"></i>
+                                <p class="label-text">Mật khẩu:</p>
+                            </label>
+                            <input type="password" class="form-control" id="inputPassword"
+                                placeholder="Nhập mật khẩu của bạn">
+                        </div>
+
+
+                        <div class="form-check ">
+                            <div class="form-control ">
+                                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                                <label class="lable-check" for="checkDefault">
+                                    Lưu mật khẩu
+                                </label>
+                            </div>
+                            <a href="#l" class="forgot-link ">Forgot password?</a>
+                        </div>
+
+
+                        <div class="form-submit ">
+                            <button type="submit" class="submit-login btn">
+                                <p class="submit-text">
+                                    Đăng nhập
+                                </p>
+                            </button>
+                            <button type="button" class="submit-newAccount btn ">
+                                <p class="submit-text">
+                                    Tạo tài khoản
+                                </p>
+                            </button>
+                        </div>
+                    </form>
+                    <!--* End form -->
+
+                    <h2 class="or">OR</h2>
+
+                    <div class="login-with ">
+                        <button type="button " class="btn btn-google">
+                            <i class="fa-brands fa-google-plus-g login-icon"></i>
+                            <p class="login-text">Gmail</p>
+                        </button>
+                        <button type="button" class="btn btn-face">
+                            <i class="login-icon fa-brands fa-facebook "></i>
+                            <p class="login-text">Facebook</p>
+                        </button>
+                        <button type="button" class="btn btn-ig   ">
+                            <i class="login-icon fa-brands fa-instagram login-icon"></i>
+                            <p class="login-text">Instagram</p>
+                        </button>
+
+                    </div>
+                </div>
+                <!--* End : Container-form -->
+
+
+                <!--* Begin: container-august -->
+                <div class="l-6 container-august">
+                    <div class="august">
+                        <div class="august-main l-12 ">
+                            <img src="./assets/img/logo2.png" class=" august-logo" alt="Logo Ausgust Shop">
+                            <p class="august-sologan">Your watch, your story</p>
+                        </div>
+
+                        <div class="august-notice">
+                            <p class="notice-text">Đăng ký thành viên để hưởng thêm đặc quyền
+                                ưu đãi dành riêng cho hội viên.</p>
+                            <p class="notice-text">Chi tiết ưu đãi : <a href="#1" class="notice-link">Xem thêm</a>
+                            </p>
+                        </div>
+
+                        <div class="about-us ">
+                            <p class="about-text">Về chúng tôi :
+                                <a href="#">
+                                    <i class="icon fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="icon fa-brands fa-youtube"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="icon fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="icon fa-brands fa-tiktok"></i>
+                                </a>
+
+                            </p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <!--* End : container-august -->
             </div>
         </div>
     </div>
+    <!--* End: Container -->
 
-    </div>
     <main>
 
     </main>
     <footer>
-        <!-- place footer here -->
+        <p id="copyright"> &copy; August 2023. All rights reserved</p>
     </footer>
 
 </body>

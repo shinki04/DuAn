@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: #000;
+        }
+        
+        input{
+            padding: 10px;
+            background-color: transparent;
+            border: 2px solid #fcc23f;
+            border-radius: 5px;
+            width: 300px;
+            color: #eee;
+            font-size: 12px;
+            transition: all 0.2s ease;
+            
+        }
+        label {
+            position: absolute;
+            left: 10px;
+            top: 12px;            
+            padding: 0 4px;
+    
+            color: #fcc23f;
+            background-color: #0d1019;
+            transition: all 0.2s ease;
+            pointer-events: none;
+        }
+
+     
+        input:not(:placeholder-shown)~label,
+        input:focus~label {
+            top: -8px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <input type="text" name="input" id="" class="input" placeholder=" ">
+        <label for="input">Floating Label</label>
+    </div>
+</body>
+</html>
