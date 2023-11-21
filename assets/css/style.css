@@ -54,6 +54,7 @@ html {
     opacity: 0.6;
 }
 
+
 /*todo CSS index.html  */
 .header-container {
     color: var(--text-color);
@@ -71,6 +72,7 @@ html {
 }
 
 .group-1 {
+    position: relative;
     font-size: 1.6em;
     font-weight: 200;
     margin-top: 2rem;
@@ -81,7 +83,7 @@ html {
     width: 20rem;
     border: none;
     border-bottom: #ccc solid 2px;
-    /* height: 2em; */
+    display: inline;
     appearance: none;
     font-size: 1em;
 }
@@ -91,6 +93,9 @@ html {
     outline-offset: 0px;
     outline: #fff
 }
+.group-1 .header-guest {
+    text-align: center;
+}
 
 .group-1 .header-guest a {
     color: var(--text-color);
@@ -99,7 +104,7 @@ html {
 .group-1 .header-guest .guest-cart,
 .guest-user {
     margin: 0 8px;
-    padding: 0px 16px;
+    padding: 0px 8px;
     font-size: 1em;
 }
 
@@ -114,6 +119,15 @@ html {
     top: 0;
     border-bottom: #ccc solid 1px;
     width: 100%;
+    height: 44px;
+}
+
+.menuToggle {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    display: none;
+    margin-top: 1.2em;
+    position: relative;
 }
 
 .header-menu-item {
@@ -122,10 +136,29 @@ html {
     padding: 8px;
 }
 
-.header-menu-item a {
+.header-menu .header-menu-item a {
     text-decoration: none;
     color: var(--text-color);
+    position: relative;
 }
+
+.header-menu-item a::before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-color-hover);
+    transform: scaleX(0);
+    transition:  transform .4s ease-in-out;
+    transform-origin: center;
+}
+
+.header-menu-item a:hover::before{
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
 
 .header-menu .header-submenu {
     background-color: #fff;
@@ -134,9 +167,10 @@ html {
     line-height: 1.5;
     display: none;
     position: absolute;
-    left: 0;
+    top: 44px;
     right: 0;
     box-shadow: 6px 10px 6px -6px rgba(0, 0, 0, 0.3);
+    min-height: 110px;
 }
 
 .header-menu .header-submenu li {
@@ -182,31 +216,38 @@ main {
 
 /*todo Product */
 .container-product {
-    padding: 0 90px;
+    padding: 0 4rem;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
     height: 700px;
     color: var(--text-white);
+
+    
 }
 
 .collection {
     grid-row: 1/3;
     background-image: url(../img/images/collection.jpg);
+
 }
 
 .collection-male {
     background-image: url(../img/images/collection-male.jpg);
+
 }
 
 .collection-female {
     background-image: url(../img/images/collection-female.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .collection-couple {
     grid-column: 2 /4;
     background-image: url(../img/images/collection-couple.jpg);
+
 }
 
 .collection,
@@ -237,7 +278,6 @@ main {
 }
 
 .brand-container img {
-    /* max-width: 16.66667%; */
     object-fit: cover;
     width: 100%;
 }
@@ -260,6 +300,11 @@ main {
 .brand-row2 a:hover {
     scale: 1.1;
     transition: 100ms;
+}
+
+.brand-container .brand {
+    text-align: center;
+    margin-top: 10px;
 }
 
 /*todo CSS Footer */
@@ -610,9 +655,9 @@ footer{
 
 /*todo Voucher.html */
 
-.container-sale {
+/* .container-sale {
 
-}
+} */
 
 .container-sale img {
     width: 90%;
@@ -646,7 +691,6 @@ footer{
 }
 .container-sale .sale-text 
 {
-    
     font-size: 1.2em;
     padding: 2rem;
 }
@@ -660,3 +704,40 @@ footer{
     color: var(--text-white);
     border: none;
 }
+
+
+/*todo Introduction.html */
+.container-introduction{
+
+}
+.container-introduction img {
+    width: 20rem;
+    max-width: 80%;
+    object-fit: cover;
+}
+.introduction-item{
+
+}
+
+.introduction-img{
+
+}
+
+.introduction-about{
+
+}
+
+.introduction-heading{
+    font-family: Barlow;
+    font-weight: bolder;
+
+}
+
+.introduction-about{
+
+}
+
+.introduction-item .introduction-highlight{
+    
+}
+
