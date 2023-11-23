@@ -115,7 +115,7 @@ function Validator(options) {
             var inputElements = formElement.querySelectorAll(rule.selector);
 
             Array.from(inputElements).forEach(function (inputElement) {
-               // Xử lý trường hợp blur khỏi input
+               // Xử lý trường hợp blur khỏi input  
                 inputElement.onblur = function () {
                     validate(inputElement, rule);
                 }

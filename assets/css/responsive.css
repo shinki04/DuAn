@@ -1,5 +1,14 @@
 /** PC */
-@media (min-width:1024px) {}
+@media (min-width:1024px) {
+    .left-line{
+        border-left: 1px solid #000;
+    }
+    
+    .right-line{
+        border-right: 1px #000 solid;
+    }
+    
+}
 
 /** Tablet */
 @media (min-width:740px) and (max-width:1023px) {
@@ -9,7 +18,9 @@
     }
 
 
-    .container-product {
+    /*todo Index.html */
+
+    .product-container {
         padding: 0 4rem;
         display: grid;
         grid-template-columns: 2fr 2fr 2fr 2fr;
@@ -17,13 +28,13 @@
         row-gap: 10px;
         height: 700px;
         color: var(--text-white);
-        grid-template-areas: 
-        "collection collection collection collection" 
-        "collection collection collection collection" 
-        "male male female female"
-        "male male female female"
-        "couple couple couple couple"
-        "couple couple couple couple";
+        grid-template-areas:
+            "collection collection collection collection"
+            "collection collection collection collection"
+            "male male female female"
+            "male male female female"
+            "couple couple couple couple"
+            "couple couple couple couple";
     }
 
     .collection {
@@ -51,11 +62,159 @@
         background-size: cover;
         background-origin: border-box;
     }
+
     .brand-container img {
         width: 80%;
     }
-    
+
+
+    /*todo Introduction.html */
+
+
 }
 
 /** Mobile */
-@media (max-width: 740px) {}
+@media (max-width: 740px) {
+
+    /*todo Header menu */
+    .header-container {}
+
+
+    .header-menu {
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        left: 0;
+        max-width: 80vw;
+        height: 100vh;
+    }
+    
+    .modal {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+
+
+
+    .menuToggle {
+        display: block;
+        position: relative;
+    }
+    .menuToggle .menuToggle-text{
+        padding: 0 10px;
+    }
+
+    .header-menu .header-menu-item {
+        text-align: left;
+    }
+
+    .header-menu .header-menu-item:first-child {
+        display: none;
+    }
+
+    
+    .header-menu.active {
+        z-index: 2;
+        display: block;
+        position: absolute;
+        background-color: #ccc;
+        height: auto;
+        top: 1.5rem;
+        left: 0;
+        max-width: 80%;
+        height: 844px;        
+    }
+
+    /* .header-menu.active::before{
+        content: "";
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .header-menu.active::after{
+        content: "";
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .header-menu .header-menu-item{
+        text-align: left;
+    } */
+
+    .header-menu .header-menu-item:first-child{
+        display: none;
+    }
+
+    .group-1 .header-search .search-input {
+        display: none;
+    }
+
+  
+
+    /*todo Index.html */
+
+    .product-container {
+        padding: 0 0;
+        height: auto;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        column-gap: 10px;
+        row-gap: 10px;
+        color: var(--text-white);
+        grid-template-areas:
+            "collection collection collection collection"
+            "collection collection collection collection"
+            "male male female female"
+            "male male female female"
+            "couple couple couple couple"
+            "couple couple couple couple";
+    }
+
+    .collection {
+        grid-area: collection;
+        height: 600px;
+    }
+
+    .collection-male {
+        grid-area: male;
+    }
+
+    .collection-female {
+        /* grid-column: 3/5; */
+        grid-area: female;
+    }
+
+    .collection-couple {
+        grid-area: couple;
+    }
+
+    .collection,
+    .collection-male,
+    .collection-female,
+    .collection-couple {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-origin: border-box;
+    }
+    .collection-male,
+    .collection-female,
+    .collection-couple{
+        height: 300px;
+    }
+
+    .brand-container img {
+        width: 80%;
+    }
+
+
+    
+
+
+
+
+
+    /*todo Introduction.html */
+
+}

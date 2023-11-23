@@ -25,25 +25,31 @@
 <body>
     <header>
         <div class="header-container grid ">
-            <a href="#" class="header-logo col l-12">
-                <img src="./assets/img/logo.png" alt="" class="header-logo-image" />
-            </a>
+            <div class="row">
+                <a href="./index.html" class="header-logo col l-12 m-12 c-12">
+                    <img src="./assets/img/logo.png" alt="" class="header-logo-image" />
+                </a>
+
+            </div>
 
             <div class="group-1 grid wide ">
                 <div class="row">
-                    <div class="header-search col l-10 c-10 m-8">
-                        <label for="search">
+                    <div class="header-search col l-10 c-6 m-8">
+
+                        <label class="search-label" for="search">
                             <i class="ti-search"></i>
                         </label>
-                        <input type="text" name="search" id="search" class="c-0 m-6 l-6">
+                        <input type="text" name="search" id="search" class="c-0 m-6 l-6 search-input">
+
+
                     </div>
 
-                    <div class="header-guest col l-2 c-2 m-4 ">
+                    <div class="header-guest col l-2 c-6 m-4 ">
                         <a href="#" class="guest-cart">
                             <i class="ti-shopping-cart"></i>
                         </a>
 
-                        <a href="#" class="guest-user">
+                        <a href="./login.html" class="guest-user">
                             <i class="fa-regular fa-user"></i>
                         </a>
                     </div>
@@ -53,62 +59,72 @@
 
 
             <nav>
-                <div class="grid ">
+                <div class="grid header-container">
                     <div class="row">
-                        <i class="ti-menu menuToggle"></i>
+                        <!-- <div class="modal">
+                            <div class="modal-container">
+                                <div class="menuToggle">
+                                    <i class="ti-menu menuBtn"></i>
+                                    <p class="menuToggle-text ">
+                                        <a href="./index.html" class="header-menu-link">Trang chủ</a>
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div> -->
 
-                        <ul class="header-menu row ">
+                        <ul class="header-menu row active">
                             <li class="header-menu-item m-2-4 col l-2-4 ">
                                 <a href="./index.html" class="header-menu-link">Trang chủ</a>
                             </li>
                             <li class="header-menu-item m-2-4 col l-2-4  ">
-                                <a href="#" class="header-menu-link">Giới thiệu</a>
+                                <a href="./introduction.html" class="header-menu-link">Giới thiệu</a>
                             </li>
                             <li class="header-menu-item m-2-4 col l-2-4 ">
-                                <a href="#1" class="header-menu-link ">Sản phẩm</a>
+                                <a href="#" class="header-menu-link ">Sản phẩm</a>
                                 <ul class="header-submenu grid row ">
                                     <li class="header-submenu-item col l-4 m-4">
-                                        <a class="txt-product-header ">Bộ sưu tập</a>
+                                        <a href="#" class="txt-product-header ">Bộ sưu tập</a>
                                         <ul class="header-minisubmenu">
                                             <li class="header-minisubmenu-item">
-                                                <a class="txt-product">Nam</a>
+                                                <a href="./product-male.html" class="txt-product">Nam</a>
                                             </li>
                                             <li class="header-minisubmenu-item">
-                                                <a class="txt-product">Nữ</a>
+                                                <a href="./product-female.html" class="txt-product">Nữ</a>
                                             </li>
                                             <li class="header-minisubmenu-item">
-                                                <a class="txt-product">Cặp đôi</a>
+                                                <a href="#" class="txt-product">Cặp đôi</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li class="header-submenu-item col l-4 m-4">
-                                        <a class="txt-product-header ">Thương hiệu</a>
+                                        <a href="#" class="txt-product-header ">Thương hiệu</a>
                                         <ul class="header-minisubmenu">
                                             <li class="header-minisubmenu-item">
                                                 <a class="txt-product">Casio</a>
                                             </li>
                                             <li class="header-minisubmenu-item">
-                                                <a class="txt-product">Citizen</a>
+                                                <a href="#" class="txt-product">Citizen</a>
                                             </li>
                                             <li class="header-minisubmenu-item">
-                                                <a class="txt-product">Doxa</a>
+                                                <a href="#" class="txt-product">Doxa</a>
                                             </li>
                                             <li class="header-minisubmenu-item">
-                                                <a class="txt-product">Tissot</a>
+                                                <a href="#" class="txt-product">Tissot</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li class="header-submenu-item col l-4 m-4">
-                                        <a class="txt-product-header ">Các dòng đặc biệt</a>
+                                        <a href="#" class="txt-product-header ">Các dòng đặc biệt</a>
                                         <ul class="header-minisubmenu">
                                             <li class="header-minisubmenu-item">
-                                                <a class="txt-product">Đồng hồ điện tử</a>
+                                                <a href="#" class="txt-product">Đồng hồ điện tử</a>
                                             </li>
                                             <li class="header-minisubmenu-item">
-                                                <a class="txt-product">Đồng hồ đính kim cương</a>
+                                                <a href="#" class="txt-product">Đồng hồ đính kim cương</a>
                                             </li>
                                             <li class="header-minisubmenu-item">
-                                                <a class="txt-product">Đồng hồ Thuỵ Sĩ</a>
+                                                <a href="#" class="txt-product">Đồng hồ Thuỵ Sĩ</a>
                                             </li>
 
                                         </ul>
@@ -124,10 +140,10 @@
                                 <a href="#" class="header-menu-link">CSKH</a>
                                 <ul class="header-submenu grid row ">
                                     <li class="header-submenu-item col l-6 m-6">
-                                        <a class="txt-product-header ">Bảo hành</a>
+                                        <a href="#" class="txt-product-header ">Bảo hành</a>
                                     </li>
                                     <li class="header-submenu-item col l-6 m-6">
-                                        <a class="txt-product-header ">Liên hệ</a>
+                                        <a href="#" class="txt-product-header ">Liên hệ</a>
                                     </li>
 
                                 </ul>
@@ -143,7 +159,7 @@
     </header>
 
     <main>
-        <div class="container">
+        <div class="container acitve">
             <div class="banner">
 
                 <img src="./assets/img/Sale/black-friday.png" alt="Sale" class="banner-img">
@@ -165,7 +181,7 @@
 
             </div>
 
-            <div class=" container-product grid wide ">
+            <div class="product-container grid wide ">
 
                 <div class="collection">
                     <p class="collection-about">Bộ sưu tập mới</p>
@@ -188,20 +204,32 @@
                 <h2 class="brand-heading">THƯƠNG HIỆU ĐỒNG HỒ NỔI TIẾNG</h2>
                 <div class="grid wide">
                     <div class="row brand-row1">
-                        <a href="#" class="brand col l-2 m-6 c-12 "><img src="./assets/img/img-famous/Baby-G.webp" alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Candino.webp" alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Casio-1.webp" alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Citizen-1.webp" alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Citizen-1.webp" alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Daniel-Wellington.webp" alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12 "><img src="./assets/img/img-famous/Baby-G.webp"
+                                alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Candino.webp"
+                                alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Casio-1.webp"
+                                alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Citizen-1.webp"
+                                alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Citizen-1.webp"
+                                alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12"><img
+                                src="./assets/img/img-famous/Daniel-Wellington.webp" alt=""></a>
                     </div>
                     <div class="row brand-row2">
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Baby-G.webp" alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Candino.webp" alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Casio-1.webp" alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Citizen-1.webp" alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Citizen-1.webp" alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Daniel-Wellington.webp" alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Baby-G.webp"
+                                alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Candino.webp"
+                                alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Casio-1.webp"
+                                alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Citizen-1.webp"
+                                alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Citizen-1.webp"
+                                alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12"><img
+                                src="./assets/img/img-famous/Daniel-Wellington.webp" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -211,21 +239,29 @@
                 <h2 class="brand-heading">THƯƠNG HIỆU ĐỒNG HỒ THỤY SĨ</h2>
                 <div class="grid wide">
                     <div class="row brand-row1">
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/Bulova.webp" alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/Certina.webp" alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/CK.webp" alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/Bulova.webp"
+                                alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/Certina.webp"
+                                alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/CK.webp"
+                                alt=""></a>
                         <a href="#" class="brand col l-2 m-6 c-12"><img
                                 src="./assets/img/img-switzerland/Claude-Bernard.webp" alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/Doxa.webp" alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/Doxa.webp"
+                                alt=""></a>
                         <a href="#" class="brand col l-2 m-6 c-12"><img
                                 src="./assets/img/img-switzerland/Frederique-Constant.webp" alt=""></a>
                     </div>
 
                     <div class="row brand-row2">
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/Longines.webp" alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/Mido.webp" alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/Rado.webp" alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/Tissot.webp" alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/Longines.webp"
+                                alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/Mido.webp"
+                                alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/Rado.webp"
+                                alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/Tissot.webp"
+                                alt=""></a>
 
                     </div>
                 </div>
@@ -266,10 +302,13 @@
                                 <li class="about-item">Thông tin liên hệ : abc&#64;gmail.com</li>
                                 <li class="about-item">Hotline: 00000000</li>
                                 <li class="about-item">
-                                    <i class="fa-brands fa-facebook"></i>
-                                    <i class="fa-brands fa-instagram"></i>
-                                    <i class="fa-brands fa-tiktok"></i>
-                                    <i class="fa-brands fa-youtube"></i>
+                                    <div class="icon-social">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <i class="fa-brands fa-tiktok"></i>
+                                        <i class="fa-brands fa-youtube"></i>
+
+                                    </div>
                                 </li>
                             </ul>
                         </div>
