@@ -12,7 +12,7 @@
 
 /** Tablet */
 @media (min-width:740px) and (max-width:1023px) {
-    .header-menu {
+    .nav {
         margin-right: 16px;
         margin-left: 16px;
     }
@@ -77,27 +77,9 @@
 @media (max-width: 740px) {
 
     /*todo Header menu */
-    .header-container {}
-
-
-    .header-menu {
-        display: block;
-        position: absolute;
-        top: 1.5rem;
-        left: 0;
-        max-width: 80vw;
-        height: 100vh;
+    .menuBtn {
+        display: inline-block;
     }
-    
-    .modal {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-
 
 
 
@@ -107,44 +89,6 @@
     }
     .menuToggle .menuToggle-text{
         padding: 0 10px;
-    }
-
-    .header-menu .header-menu-item {
-        text-align: left;
-    }
-
-    .header-menu .header-menu-item:first-child {
-        display: none;
-    }
-
-    
-    .header-menu.active {
-        z-index: 2;
-        display: block;
-        position: absolute;
-        background-color: #ccc;
-        height: auto;
-        top: 1.5rem;
-        left: 0;
-        max-width: 80%;
-        height: 844px;        
-    }
-
-    /* .header-menu.active::before{
-        content: "";
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-    .header-menu.active::after{
-        content: "";
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .header-menu .header-menu-item{
-        text-align: left;
-    } */
-
-    .header-menu .header-menu-item:first-child{
-        display: none;
     }
 
     .group-1 .header-search .search-input {

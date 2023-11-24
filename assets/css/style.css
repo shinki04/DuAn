@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100;200&family=Arizonia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300;1,400&display=swap');
 
 @font-face {
     font-family: BarlowCondensed-Regular;
@@ -56,6 +57,8 @@ html {
 
 
 /*todo CSS index.html  */
+
+
 .header-container {
     color: var(--text-color);
     position: relative;
@@ -118,7 +121,105 @@ html {
 
 /*todo CSS Header menu */
 
-.header-menu {
+
+.nav-overlay {
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear .5s;
+}
+
+.header-container-mobile {
+    background-color: #fff;
+    max-width: 100%;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.2s , opacity linear 0.2s; 
+    overflow: scroll;
+    scroll-behavior: smooth;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    box-shadow: 5px 0px 9px 4px #e6e6e6b5;
+}
+
+.header-container-mobile ul {
+    padding-left: 20px;
+}
+
+.dropdown-overlay {
+    display: block;
+}
+.dropdown-icon {
+    padding: 8px
+}
+.dropdown-icon.active {
+    transform: rotate(90deg);
+}
+
+.nav-mobile li {
+    list-style: none;
+    position: relative;
+    display: block;
+    margin: 20px 0;
+}
+
+.nav-mobile-close {
+    position: absolute;
+    top: 0;
+    right:  0;
+    padding: 20px;
+    z-index: 2;
+}
+
+.nav-mobile li a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 0;
+}
+
+.nav-mobile .nav-mobile-link {
+    display: inline;
+}
+
+.header-mobile-close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 2;
+}
+
+.nav-input:checked~.nav-overlay {
+    display: block;
+}
+
+.nav-input:checked~.header-container-mobile {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.subnav-mobile,
+.subnav-mobile-dropdown{
+    display: none;
+
+}
+.subnav-mobile.active,
+.subnav-mobile-dropdown.active {
+    display: block;
+
+}
+
+.nav {
     margin-top: 2em;
     font-size: 1.6em;
     position: relative;
@@ -144,19 +245,19 @@ html {
     display: inline;
 }
 
-.header-menu-item {
+.nav-item {
     list-style: none;
     text-align: center;
     padding: 8px;
 }
 
-.header-menu .header-menu-item a {
+.nav .nav-item a {
     text-decoration: none;
     color: var(--text-color);
     position: relative;
 }
 
-.header-menu-item a::before {
+.nav-item a::before {
     content: "";
     position: absolute;
     bottom: -8px;
@@ -168,13 +269,13 @@ html {
     transform-origin: center;
 }
 
-.header-menu-item a:hover::before{
+.nav-item a:hover::before{
     transform: scaleX(1);
     transform-origin: center;
 }
 
 
-.header-menu .header-submenu {
+.nav .subnav {
     background-color: #fff;
     padding-top: 20px;
     width: 100%;
@@ -187,27 +288,27 @@ html {
     min-height: 110px;
 }
 
-.header-menu .header-submenu li {
+.nav .subnav li {
     list-style: none;
     margin-bottom: 16px;
 }
 
-.header-menu .header-menu-item:hover .header-submenu {
+.nav .nav-item:hover .subnav {
     display: flex;
 }
 
-.header-menu .header-submenu .txt-product-header {
+.nav .subnav .subnav-link {
     font-weight: bold;
     line-height: 2.8em;
 }
 
-.header-menu .header-submenu .txt-product {
+.nav .subnav .subnav-dropdown-link {
     margin: 4px 0;
 }
 
-.header-menu .header-submenu>li:hover>a,
-.header-submenu .header-minisubmenu>li:hover>a,
-.header-menu>li:hover>a {
+.nav .subnav>li:hover>a,
+.subnav .subnav-dropdown>li:hover>a,
+.nav>li:hover>a {
     color: var(--text-color-hover);
 }
 
@@ -347,9 +448,6 @@ footer{
     padding-bottom: 20px;
 }
 
-.footer-container .footer-heading {
-    margin-bottom: 10px;
-}
 
 .footer-container li {
     list-style: none;
@@ -366,6 +464,7 @@ footer{
 .store-policy,
 .store-time {
     line-height: 1.8;
+    margin: 1rem 0;
 }
 .store-about .icon-social{
     display: flex;
@@ -695,7 +794,6 @@ footer{
 }
 .sale-container .sale-item:hover {
     scale: 1.02;
-
     transition: all 0.2s linear;
 }
 

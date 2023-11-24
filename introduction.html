@@ -18,30 +18,39 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
+    <!-- Link js -->
+    <script src="./assets/js/navmobile.js"></script>
+
 </head>
 
 <body>
     <header>
         <div class="header-container grid ">
-            <a href="#" class="header-logo col l-12">
-                <img src="./assets/img/logo.png" alt="" class="header-logo-image" />
-            </a>
+            <div class="row">
+                <a href="./index.html" class="header-logo col l-12 m-12 c-12">
+                    <img src="./assets/img/logo.png" alt="" class="header-logo-image" />
+                </a>
+
+            </div>
 
             <div class="group-1 grid wide ">
                 <div class="row">
                     <div class="header-search col l-10 c-6 m-8">
-                        <label for="search">
+
+                        <label class="search-label btn" for="search">
                             <i class="ti-search"></i>
                         </label>
-                        <input type="text" name="search" id="search" class="c-0 m-6 l-6">
+                        <input type="text" name="search" id="search" class="c-0 m-6 l-6 search-input">
+
+
                     </div>
 
                     <div class="header-guest col l-2 c-6 m-4 ">
-                        <a href="#" class="guest-cart">
+                        <a href="#" class="guest-cart btn">
                             <i class="ti-shopping-cart"></i>
                         </a>
 
-                        <a href="#" class="guest-user">
+                        <a href="./login.html" class="guest-user btn">
                             <i class="fa-regular fa-user"></i>
                         </a>
                     </div>
@@ -51,62 +60,177 @@
 
 
             <nav>
-                <div class="grid ">
+                <div class="grid header-container">
                     <div class="row">
-                        <i class="ti-menu menuToggle"></i>
+                        <div class="menuToggle">
+                            <label for="nav-mobile-input"><i class="ti-menu menuBtn"></i>
+                            </label>
+                            <a href="./index.html" class="nav-mobile-link">Trang chủ</a>
 
-                        <ul class="header-menu row ">
-                            <li class="header-menu-item m-2-4 col l-2-4 ">
-                                <a href="./index.html" class="header-menu-link">Trang chủ</a>
+
+                            <p class="menuToggle-text">
+                            </p>
+                        </div>
+                        <input type="checkbox" hidden name="" class="nav-input" id="nav-mobile-input">
+                        <label for="nav-mobile-input" class="nav-overlay"></label>
+                        <div class="header-container-mobile">
+
+                            <ul class="nav-mobile">
+                                <label for="nav-mobile-input"><i class="ti-close nav-mobile-close"></i></label>
+
+                                <li class="nav-mobile-item ">
+                                    <a href="./index.html" class="nav-mobile-link">Trang chủ</a>
+                                </li>
+                                <li class="nav-mobile-item  ">
+                                    <a href="./introduction.html" class="nav-mobile-link">Giới thiệu</a>
+                                </li>
+                                <li class="nav-mobile-item ">
+                                    <div class="dropdown-overlay">
+                                        <a href="#" class="nav-mobile-link dropdown-heading ">Sản phẩm</a>
+                                        <i class="ti-angle-down dropdown-icon"></i>
+                                    </div>
+
+                                    <ul class="subnav-mobile active">
+                                        <li class="subnav-mobile-item ">
+                                            <div class="dropdown-overlay">
+                                                <a href="#" class="subnav-mobile-link dropdown-heading ">Bộ sưu tập</a>
+                                                <i class="ti-angle-down dropdown-icon"></i>
+
+                                            </div>
+                                            <ul class="subnav-mobile-dropdown">
+                                                <li class="subnav-mobile-dropdown-item">
+                                                    <a href="./product-male.html"
+                                                        class="subnav-mobile-dropdown-item">Nam</a>
+                                                </li>
+                                                <li class="subnav-mobile-dropdown-item">
+                                                    <a href="./product-female.html"
+                                                        class="subnav-mobile-dropdown-item">Nữ</a>
+                                                </li>
+                                                <li class="subnav-mobile-dropdown-item">
+                                                    <a href="#" class="subnav-mobile-dropdown-item">Cặp đôi</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="subnav-mobile-item   ">
+                                            <div class="dropdown-overlay">
+                                                <a href="#" class="subnav-mobile-link dropdown-heading ">Thương hiệu</a>
+                                                <i class="ti-angle-down dropdown-icon "></i>
+                                            </div>
+                                            <ul class="subnav-mobile-dropdown">
+                                                <li class="subnav-mobile-dropdown-item">
+                                                    <a class="subnav-mobile-dropdown-item">Casio</a>
+                                                </li>
+                                                <li class="subnav-mobile-dropdown-item">
+                                                    <a href="#" class="subnav-mobile-dropdown-item">Citizen</a>
+                                                </li>
+                                                <li class="subnav-mobile-dropdown-item">
+                                                    <a href="#" class="subnav-mobile-dropdown-item">Doxa</a>
+                                                </li>
+                                                <li class="subnav-mobile-dropdown-item">
+                                                    <a href="#" class="subnav-mobile-dropdown-item">Tissot</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="subnav-mobile-item  ">
+                                            <div class="dropdown-overlay">
+                                                <a href="#" class="subnav-mobile-link dropdown-heading">Các dòng đặc
+                                                    biệt</a>
+                                                <i class="ti-angle-down dropdown-icon"></i>
+
+                                            </div>
+                                            <ul class="subnav-mobile-dropdown">
+                                                <li class="subnav-mobile-dropdown-item">
+                                                    <a href="#" class="subnav-mobile-dropdown-item">Đồng hồ điện tử</a>
+                                                </li>
+                                                <li class="subnav-mobile-dropdown-item">
+                                                    <a href="#" class="subnav-mobile-dropdown-item">Đồng hồ đính kim
+                                                        cương</a>
+                                                </li>
+                                                <li class="subnav-mobile-dropdown-item">
+                                                    <a href="#" class="subnav-mobile-dropdown-item">Đồng hồ Thuỵ Sĩ</a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </li>
+                                <li class="nav-mobile-item ">
+                                    <a href="#" class="nav-mobile-link">Ưu đãi</a>
+                                </li>
+                                </li>
+                                <li class="nav-mobile-item ">
+                                    <div class="dropdown-overlay">
+                                        <a href="#" class="nav-mobile-link dropdown-heading">CSKH</a>
+                                        <i class="ti-angle-down dropdown-icon"></i>
+
+                                    </div>
+                                    <ul class="subnav-mobile-dropdown  ">
+                                        <li class="subnav-mobile-item ">
+                                            <a href="#" class="subnav-mobile-link ">Bảo hành</a>
+                                        </li>
+                                        <li class="subnav-mobile-item ">
+                                            <a href="#" class="subnav-mobile-link ">Liên hệ</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <ul class="nav row c-0">
+                            <li class="nav-item m-2-4 c-0 col l-2-4 ">
+                                <a href="./index.html" class="nav-link">Trang chủ</a>
                             </li>
-                            <li class="header-menu-item m-2-4 col l-2-4  ">
-                                <a href="#" class="header-menu-link">Giới thiệu</a>
+                            <li class="nav-item m-2-4 c-0 col l-2-4  ">
+                                <a href="./introduction.html" class="nav-link">Giới thiệu</a>
                             </li>
-                            <li class="header-menu-item m-2-4 col l-2-4 ">
-                                <a href="#1" class="header-menu-link ">Sản phẩm</a>
-                                <ul class="header-submenu grid row ">
-                                    <li class="header-submenu-item col l-4 m-4">
-                                        <a class="txt-product-header ">Bộ sưu tập</a>
-                                        <ul class="header-minisubmenu">
-                                            <li class="header-minisubmenu-item">
-                                                <a class="txt-product">Nam</a>
+                            <li class="nav-item m-2-4 c-0 col l-2-4 ">
+                                <a href="#" class="nav-link ">Sản phẩm</a>
+                                <ul class="subnav grid row ">
+                                    <li class="subnav-item col l-4 m-4">
+                                        <a href="#" class="subnav-link ">Bộ sưu tập</a>
+                                        <ul class="subnav-dropdown">
+                                            <li class="subnav-dropdown-item">
+                                                <a href="./product-male.html" class="subnav-dropdown-link">Nam</a>
                                             </li>
-                                            <li class="header-minisubmenu-item">
-                                                <a class="txt-product">Nữ</a>
+                                            <li class="subnav-dropdown-item">
+                                                <a href="./product-female.html" class="subnav-dropdown-link">Nữ</a>
                                             </li>
-                                            <li class="header-minisubmenu-item">
-                                                <a class="txt-product">Cặp đôi</a>
+                                            <li class="subnav-dropdown-item">
+                                                <a href="#" class="subnav-dropdown-link">Cặp đôi</a>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="header-submenu-item col l-4 m-4">
-                                        <a class="txt-product-header ">Thương hiệu</a>
-                                        <ul class="header-minisubmenu">
-                                            <li class="header-minisubmenu-item">
-                                                <a class="txt-product">Casio</a>
+                                    <li class="subnav-item col l-4 m-4">
+                                        <a href="#" class="subnav-link ">Thương hiệu</a>
+                                        <ul class="subnav-dropdown">
+                                            <li class="subnav-dropdown-item">
+                                                <a class="subnav-dropdown-link">Casio</a>
                                             </li>
-                                            <li class="header-minisubmenu-item">
-                                                <a class="txt-product">Citizen</a>
+                                            <li class="subnav-dropdown-item">
+                                                <a href="#" class="subnav-dropdown-link">Citizen</a>
                                             </li>
-                                            <li class="header-minisubmenu-item">
-                                                <a class="txt-product">Doxa</a>
+                                            <li class="subnav-dropdown-item">
+                                                <a href="#" class="subnav-dropdown-link">Doxa</a>
                                             </li>
-                                            <li class="header-minisubmenu-item">
-                                                <a class="txt-product">Tissot</a>
+                                            <li class="subnav-dropdown-item">
+                                                <a href="#" class="subnav-dropdown-link">Tissot</a>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="header-submenu-item col l-4 m-4">
-                                        <a class="txt-product-header ">Các dòng đặc biệt</a>
-                                        <ul class="header-minisubmenu">
-                                            <li class="header-minisubmenu-item">
-                                                <a class="txt-product">Đồng hồ điện tử</a>
+                                    <li class="subnav-item col l-4 m-4">
+                                        <a href="#" class="subnav-link ">Các dòng đặc biệt</a>
+                                        <ul class="subnav-dropdown">
+                                            <li class="subnav-dropdown-item">
+                                                <a href="#" class="subnav-dropdown-link">Đồng hồ điện tử</a>
                                             </li>
-                                            <li class="header-minisubmenu-item">
-                                                <a class="txt-product">Đồng hồ đính kim cương</a>
+                                            <li class="subnav-dropdown-item">
+                                                <a href="#" class="subnav-dropdown-link">Đồng hồ đính kim cương</a>
                                             </li>
-                                            <li class="header-minisubmenu-item">
-                                                <a class="txt-product">Đồng hồ Thuỵ Sĩ</a>
+                                            <li class="subnav-dropdown-item">
+                                                <a href="#" class="subnav-dropdown-link">Đồng hồ Thuỵ Sĩ</a>
                                             </li>
 
                                         </ul>
@@ -114,18 +238,18 @@
                                 </ul>
 
                             </li>
-                            <li class="header-menu-item m-2-4 col l-2-4 ">
-                                <a href="#" class="header-menu-link">Ưu đãi</a>
+                            <li class="nav-item m-2-4 c-0 col l-2-4 ">
+                                <a href="#" class="nav-link">Ưu đãi</a>
                             </li>
                             </li>
-                            <li class="header-menu-item m-2-4 col l-2-4 ">
-                                <a href="#" class="header-menu-link">CSKH</a>
-                                <ul class="header-submenu grid row ">
-                                    <li class="header-submenu-item col l-6 m-6">
-                                        <a class="txt-product-header ">Bảo hành</a>
+                            <li class="nav-item m-2-4 c-0 col l-2-4 ">
+                                <a href="#" class="nav-link">CSKH</a>
+                                <ul class="subnav grid row ">
+                                    <li class="subnav-item col l-6 m-6">
+                                        <a href="#" class="subnav-link ">Bảo hành</a>
                                     </li>
-                                    <li class="header-submenu-item col l-6 m-6">
-                                        <a class="txt-product-header ">Liên hệ</a>
+                                    <li class="subnav-item col l-6 m-6">
+                                        <a href="#" class="subnav-link ">Liên hệ</a>
                                     </li>
 
                                 </ul>
