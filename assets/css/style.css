@@ -551,7 +551,7 @@ footer{
 /*todo Login.html */
 
 .back-container {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     margin: 1em 1em;
@@ -586,11 +586,12 @@ footer{
     margin-top: 4rem;
 }
 
-.form -container.form-text {
+.form-container .form-text {
     text-align: center;
+    padding: 4px 0;
 }
 
-.form -container.form-heading {
+.form-container .form-heading {
     padding: 1rem 0;
     text-align: center;
 }
