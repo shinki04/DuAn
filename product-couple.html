@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm cặp đôi</title>
+
+
+    <!-- Link css font -->
+    <link rel="stylesheet" href="./assets/font/Arima Madurai font/style.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Link css style -->
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Link js -->
+    <script src="./assets/js/navmobile.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="header-container grid ">
+            <div class="row">
+                <a href="./index.html" class="header-logo col l-12 m-12 c-12">
+                    <img src="./assets/img/logo.png" alt="" class="header-logo-image" />
+                </a>
+
+            </div>
+
+            <div class="group-1 grid wide ">
+                <div class="row">
+                    <div class="header-search col l-10 c-6 m-8">
+
+                        <label class="search-label btn" for="search">
+                            <i class="ti-search"></i>
+                        </label>
+                        <input type="text" name="search" id="search" class="c-0 m-6 l-6 search-input">
+
+
+                    </div>
+
+                    <div class="header-guest col l-2 c-6 m-4 ">
+                        <a href="#" class="guest-cart btn">
+                            <i class="ti-shopping-cart"></i>
+                        </a>
+
+                        <a href="./login.html" class="guest-user btn">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <nav>
+                <div class="grid header-container">
+                    <div class="row">
+                        <div class="menuToggle">
+                            <label for="nav-mobile-input"><i class="ti-menu menuBtn"></i>
+                            </label>
+                            <a href="./index.html" class="nav-mobile-link">Trang chủ</a>
+
+
+                            <p class="menuToggle-text">
+                            </p>
+                        </div>
+                        <input type="checkbox" hidden name="" class="nav-input" id="nav-mobile-input">
+                        <label for="nav-mobile-input" class="nav-overlay"></label>
+                        <div class="header-container-mobile">
+
+                            <ul class="nav-mobile">
+                                <label for="nav-mobile-input"><i class="ti-close nav-mobile-close"></i></label>
+
+                                <li class="nav-mobile-item ">
+                                    <a href="./index.html" class="nav-mobile-link">Trang chủ</a>
+                                </li>
+                                <li class="nav-mobile-item  ">
+                                    <a href="./introduction.html" class="nav-mobile-link">Giới thiệu</a>
+                                </li>
+                                <li class="nav-mobile-item ">
+                                    <div class="dropdown-overlay">
+                                        <a href="#" class="nav-mobile-link dropdown-heading ">Sản phẩm</a>
+                                        <i class="ti-angle-down dropdown-icon"></i>
+                                    </div>
+
+                                    <ul class="subnav-mobile active">
+                                        <li class="subnav-mobile-item ">
+                                            <div class="dropdown-overlay">
+                                                <a href="#" class="subnav-mobile-link dropdown-heading ">Bộ sưu tập</a>
+                                                <i class="ti-angle-down dropdown-icon"></i>
+
+                                            </div>
+                                            <ul class="subnav-mobile-dropdown">
+                                                <li class="subnav-mobile-dropdown-item">
+                                                    <a href="./product-male.html"
+                                                        class="subnav-mobile-dropdown-item">Nam</a>
+                                                </li>
+                                                <li class="subnav-mobile-dropdown-item">
+                                                    <a href="./product-female.html"
+                                                        class="subnav-mobile-dropdown-item">Nữ</a>
+                                                </li>
+                                                <li class="subnav-mobile-dropdown-item">
+                                                    <a href="#" class="subnav-mobile-dropdown-item">Cặp đôi</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="subnav-mobile-item   ">
+                                            <div class="dropdown-overlay">
+                                                <a href="#" class="subnav-mobile-link dropdown-heading ">Thương hiệu</a>
+                                                <i class="ti-angle-down dropdown-icon "></i>
+                                            </div>
+                                            <ul class="subnav-mobile-dropdown">
+                                                <li class="subnav-mobile-dropdown-item">
+                                                    <a class="subnav-mobile-dropdown-item">Casio</a>
+                                                </li>
+                                                <li class="subnav-mobile-dropdown-item">
+                                                    <a href="#" class="subnav-mobile-dropdown-item">Citizen</a>
+                                                </li>
+                                                <li class="subnav-mobile-dropdown-item">
+                                                    <a href="#" class="subnav-mobile-dropdown-item">Doxa</a>
+                                                </li>
+                                                <li class="subnav-mobile-dropdown-item">
+                                                    <a href="#" class="subnav-mobile-dropdown-item">Tissot</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="subnav-mobile-item  ">
+                                            <div class="dropdown-overlay">
+                                                <a href="#" class="subnav-mobile-link dropdown-heading">Các dòng đặc
+                                                    biệt</a>
+                                                <i class="ti-angle-down dropdown-icon"></i>
+
+                                            </div>
+                                            <ul class="subnav-mobile-dropdown">
+                                                <li class="subnav-mobile-dropdown-item">
+                                                    <a href="#" class="subnav-mobile-dropdown-item">Đồng hồ điện tử</a>
+                                                </li>
+                                                <li class="subnav-mobile-dropdown-item">
+                                                    <a href="#" class="subnav-mobile-dropdown-item">Đồng hồ đính kim
+                                                        cương</a>
+                                                </li>
+                                                <li class="subnav-mobile-dropdown-item">
+                                                    <a href="#" class="subnav-mobile-dropdown-item">Đồng hồ Thuỵ Sĩ</a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </li>
+                                <li class="nav-mobile-item ">
+                                    <a href="#" class="nav-mobile-link">Ưu đãi</a>
+                                </li>
+                                </li>
+                                <li class="nav-mobile-item ">
+                                    <div class="dropdown-overlay">
+                                        <a href="#" class="nav-mobile-link dropdown-heading">CSKH</a>
+                                        <i class="ti-angle-down dropdown-icon"></i>
+
+                                    </div>
+                                    <ul class="subnav-mobile-dropdown  ">
+                                        <li class="subnav-mobile-item ">
+                                            <a href="#" class="subnav-mobile-link ">Bảo hành</a>
+                                        </li>
+                                        <li class="subnav-mobile-item ">
+                                            <a href="#" class="subnav-mobile-link ">Liên hệ</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <ul class="nav row ">
+                            <li class="nav-item col m-2-4 l-2-4 ">
+                                <a href="./index.html" class="nav-link">Trang chủ</a>
+                            </li>
+                            <li class="nav-item col m-2-4 l-2-4   ">
+                                <a href="./introduction.html" class="nav-link">Giới thiệu</a>
+                            </li>
+                            <li class="nav-item col m-2-4 l-2-4  ">
+                                <p href="#" class="nav-link ">Sản phẩm</p>
+                                <ul class="subnav grid row ">
+                                    <li class="subnav-item col l-4 m-4">
+                                        <a href="#" class="subnav-link ">Bộ sưu tập</a>
+                                        <ul class="subnav-dropdown">
+                                            <li class="subnav-dropdown-item">
+                                                <a href="./product-male.html" class="subnav-dropdown-link">Nam</a>
+                                            </li>
+                                            <li class="subnav-dropdown-item">
+                                                <a href="./product-female.html" class="subnav-dropdown-link">Nữ</a>
+                                            </li>
+                                            <li class="subnav-dropdown-item">
+                                                <a href="./product-couple.html" class="subnav-dropdown-link">Cặp đôi</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="subnav-item col l-4 m-4">
+                                        <a href="#" class="subnav-link ">Thương hiệu</a>
+                                        <ul class="subnav-dropdown">
+                                            <li class="subnav-dropdown-item">
+                                                <a class="subnav-dropdown-link">Casio</a>
+                                            </li>
+                                            <li class="subnav-dropdown-item">
+                                                <a href="#" class="subnav-dropdown-link">Citizen</a>
+                                            </li>
+                                            <li class="subnav-dropdown-item">
+                                                <a href="#" class="subnav-dropdown-link">Doxa</a>
+                                            </li>
+                                            <li class="subnav-dropdown-item">
+                                                <a href="#" class="subnav-dropdown-link">Tissot</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="subnav-item col l-4 m-4">
+                                        <a href="#" class="subnav-link ">Các dòng đặc biệt</a>
+                                        <ul class="subnav-dropdown">
+                                            <li class="subnav-dropdown-item">
+                                                <a href="#" class="subnav-dropdown-link">Đồng hồ điện tử</a>
+                                            </li>
+                                            <li class="subnav-dropdown-item">
+                                                <a href="#" class="subnav-dropdown-link">Đồng hồ đính kim cương</a>
+                                            </li>
+                                            <li class="subnav-dropdown-item">
+                                                <a href="#" class="subnav-dropdown-link">Đồng hồ Thuỵ Sĩ</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="nav-item col m-2-4 l-2-4  ">
+                                <a href="#" class="nav-link">Ưu đãi</a>
+                            </li>
+                            </li>
+                            <li class="nav-item col m-2-4 l-2-4  ">
+                                <a href="#" class="nav-link">CSKH</a>
+                                <ul class="subnav grid row ">
+                                    <li class="subnav-item col l-6 m-6">
+                                        <a href="#" class="subnav-link ">Bảo hành</a>
+                                    </li>
+                                    <li class="subnav-item col l-6 m-6">
+                                        <a href="#" class="subnav-link ">Liên hệ</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <h1 class="product-couple">_ĐỒNG HỒ_CẶP ĐÔI_</h1>
+        <div class="couple-container casio-product">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-12  m-12 c-12 ">
+                        <h1 class="couple-heading">Casio</h1>
+                    </div>
+                    <div class=" col l-12">
+
+                        <div class="row">
+                            <div class="col l-3 m-6 c-12  couple-item">
+                                <img class=" img-product" src="./assets/img/images/casio/male/1.webp"
+                                    alt="">
+                                <p class="about-product">Casio MTP-V001L-1BUDF - Quartz (Pin) - Mặt Số 38mm, Kính
+                                    Cứng,
+                                    Chống Nước 3ATM</p>
+                                <span class="price-product">648.000 ₫</span>
+                                <div class="function-product">
+                                    <button class=" buynow-product btn">Mua ngay</button>
+                                    <button class=" addcart-product btn">Thêm giỏ hàng</button>
+                                </div>
+
+
+
+                            </div>
+                            <div class="col l-3 m-6 c-12 m-6 c-12 couple-item">
+                                <img class="img-product" src="./assets/img/images/casio/male/2.webp" alt="">
+                                <p class="about-product">Casio MTP-V002GL-7B2UDF - Quartz (Pin) - Mặt Số 37mm, Kính
+                                    Cứng, Chống Nước 3ATM</p>
+                                <span class="price-product">803.000 đ</span>
+                                <div class="function-product">
+                                    <button class="buynow-product btn">Mua ngay</button>
+                                    <button class="addcart-product btn">Thêm giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12 couple-item">
+                                <img class="img-product" src="./assets/img/images/casio/male/3.webp" alt="">
+                                <p class="about-product">Casio MRW-200H-1B2VDF - Quartz (Pin) - Mặt Số 44m, Kính Nhựa,
+                                    Chống Nước 10ATM</p>
+                                <span class="price-product">856.000 đ</span>
+                                <div class="function-product">
+                                    <button class="buynow-product btn">Mua ngay</button>
+                                    <button class="addcart-product btn">Thêm giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12 couple-item">
+                                <img class="img-product" src="./assets/img/images/casio/male/4.webp" alt="">
+                                <p class="about-product">Casio MTP-1375D-1AVDF - Quartz (Pin) - Dây Kim Loại</p>
+                                <span class="price-product">2.177.000 đ</span>
+                                <div class="function-product">
+                                    <button class="buynow-product btn">Mua ngay</button>
+                                    <button class="addcart-product btn">Thêm giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="couple-container citizen-product">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-12  m-12 c-12 couple-heading">
+                        <h1>Citizen</h1>
+                    </div>
+                    <div class="couple-casio col l-12">
+                        <div class="row">
+                            <div class="col l-3 m-6 c-12 couple-item">
+                                <img class="img-product" src="./assets/img/images/citizen/male/1.webp" alt="">
+                                <p class="about-product">Citizen BM8595-16H - Nam - Eco-Drive (Năng Lượng Ánh Sáng) -
+                                    Dây Vải - Mặt Số 42mm</p>
+                                <span class="price-product">7.085.000 đ</span>
+                                <div class="function-product">
+                                    <button class="buynow-product btn">Mua ngay</button>
+                                    <button class="addcart-product btn">Thêm giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12 couple-item">
+                                <img class="img-product" src="./assets/img/images/citizen/male/2.webp" alt="">
+                                <p class="about-product">Citizen AN8200-50A - Kính Cứng - Quartz (Máy Pin) - Mặt Số
+                                    44mm, Chronograph, Chống Nước 10ATM</p>
+                                <span class="price-product">6.385.000 đ</span>
+                                <div class="function-product">
+                                    <button class="buynow-product btn">Mua ngay</button>
+                                    <button class="addcart-product btn">Thêm giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12 couple-item">
+                                <img class=" img-product" src="./assets/img/images/citizen/male/3.webp" alt="">
+                                <p class="about-product">Citizen NJ0153-82X - Kính Sapphire - Automatic (Cơ Tự Động) -
+                                    Mặt Số 40mm</p>
+                                <span class=" price-product">13.385.000 đ</span>
+                                <div class="function-product">
+                                    <button class="buynow-product btn">Mua ngay</button>
+                                    <button class="addcart-product btn">Thêm giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12 couple-item">
+                                <img class="img-product" src="./assets/img/images/citizen/male/4.webp" alt="">
+                                <p class="about-product">Citizen NJ0090-81E - Kính Sapphire - Automatic (Tự Động) - Mặt
+                                    Số 42mm, Trữ Cót 40 Giờ, Chống Nước 3ATM</p>
+                                <span class="price-product">12.485.000 đ</span>
+                                <div class="function-product">
+                                    <button class="buynow-product btn">Mua ngay</button>
+                                    <button class="addcart-product btn">Thêm giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="couple-container doxa-product">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-12  m-12 c-12 couple-heading">
+                        <h1>doxa</h1>
+                    </div>
+                    <div class="couple-casio col l-12">
+                        <div class="row">
+                            <div class="col l-3 m-6 c-12 couple-item">
+                                <img class="img-product" src="./assets/img/images/doxa/male/1.webp" alt="">
+                                <p class="about-product">Doxa D226RGY - Nam - Kính Sapphire - Quartz (Pin) - Dây Vải -
+                                    Mặt Số 42mm</p>
+                                <span class="price-product">28.450.000 đ</span>
+                                <div class="function-product">
+                                    <button class="buynow-product btn">Mua ngay</button>
+                                    <button class="addcart-product btn">Thêm giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12  couple-item">
+
+                                <img class="img-product" src="./assets/img/images/doxa/male/2.webp" alt="">
+                                <p class="about-product">Doxa D222RSV - Nam - Kính Sapphire - Automatic (Cơ Tự Động) -
+                                    Dây Kim Loại - Mặt Số 40mm</p>
+                                <span class="price-product">48.190.000 đ</span>
+                                <div class="function-product">
+                                    <button class="buynow-product btn">Mua ngay</button>
+                                    <button class="addcart-product btn">Thêm giỏ hàng</button>
+                                </div>
+
+
+                            </div>
+                            <div class="col l-3 m-6 c-12 couple-item">
+                                <img class="img-product" src="./assets/img/images/doxa/male/3.webp" alt="">
+                                <p class="about-product">Doxa D183SSD - Nam - Kính Sapphire - Automatic (Cơ Tự Động) -
+                                    Dây Da - Mặt Số 41mm</p>
+                                <span class="price-product">38.340.000 đ</span>
+                                <div class="function-product">
+                                    <button class="buynow-product btn">Mua ngay</button>
+                                    <button class="addcart-product btn">Thêm giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12 couple-item">
+                                <img class="img-product" src="./assets/img/images/doxa/male/4.webp" alt="">
+                                <p class="about-product">Doxa GrandeMetre Blue Planet D198RTB - Nam - Kính Sapphire -
+                                    Automatic (Cơ Tự Động) - Mặt Số 42mm</p>
+                                <span class="price-product">135.410.000 đ</span>
+                                <div class="function-product">
+                                    <button class="buynow-product btn">Mua ngay</button>
+                                    <button class="addcart-product btn">Thêm giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="couple-container tissot-product">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-12  m-12 c-12 couple-heading">
+                        <h1>tissot</h1>
+                    </div>
+                    <div class="couple-casio col l-12">
+                        <div class="row">
+                            <div class="col l-3 m-6 c-12 couple-item">
+                                <img class="img-product" src="./assets/img/images/tissot/male/1.webp" alt="">
+                                <p class="about-product">Tissot T129.410.16.013.00 - Nam - Kính Sapphire - Quartz (Pin)
+                                    - Mặt Số 42mm, Swiss Made, Chống Nước 5ATM</p>
+                                <span class="price-product">7.700.000 đ</span>
+                                <div class="function-product">
+                                    <button class="buynow-product btn">Mua ngay</button>
+                                    <button class="addcart-product btn">Thêm giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12 couple-item">
+                                <img class="img-product" src="./assets/img/images/tissot/male/2.webp" alt="">
+                                <p class="about-product">Tissot T122.407.16.043.00 - Nam - Kính Sapphire - Automatic (Tự
+                                    Động) - Mặt Số 40mm, Chống Nước 5ATM</p>
+                                <span class="price-product">19.250.000 đ</span>
+                                <div class="function-product">
+                                    <button class="buynow-product btn">Mua ngay</button>
+                                    <button class="addcart-product btn">Thêm giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12 couple-item">
+                                <img class="img-product" src="./assets/img/images/tissot/male/3.webp" alt="">
+                                <p class="about-product">Tissot T127.407.11.061.01 - Nam - Automatic - Trữ Cót 80 Giờ,
+                                    Kính Sapphire, Mặt Số 40mm</p>
+                                <span class="price-product">25.000.000 đ</span>
+                                <div class="function-product">
+                                    <button class="buynow-product btn">Mua ngay</button>
+                                    <button class="addcart-product btn">Thêm giỏ hàng</button>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-6 c-12 couple-item">
+                                <img class="img-product" src="./assets/img/images/tissot/male/4.webp" alt="">
+                                <p class="about-product">Tissot Le Locle T006.407.22.036.01 - Nam - Automatic (Tự Động)
+                                    - Mặt Số 39.3mm, Trữ Cót 80 Giờ</p>
+                                <span class="price-product">28.800.000 đ</span>
+                                <div class="function-product">
+                                    <button class="buynow-product btn">Mua ngay</button>
+                                    <button class="addcart-product btn">Thêm giỏ hàng</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-container grid wide">
+            <p class="shop-name">AUGUST</p>
+
+            <div class="footer-store">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col c-12 m-12 l-4 store-chain">
+                            <h3 class="footer-heading">Hệ thống cửa hàng</h3>
+                            <ul class="list-store">
+                                <li class="store-item">TP.Hồ Chí Minh</li>
+                                <li class="store-item">Hà Nội</li>
+                                <li class="store-item">Biên hoà - Bình Dương</li>
+                                <li class="store-item">Đà Nẵng</li>
+                            </ul>
+                        </div>
+                        <div class="col c-12 m-12 l-4 store-info">
+                            <h3 class="footer-heading">Thông tin</h3>
+
+                            <ul class="list-info">
+                                <li class="info-item">Thông tin liên hệ</li>
+                                <li class="info-item">Thanh toán - trả góp</li>
+                                <li class="info-item">Liên hệ đối tác doanh nghiệp</li>
+                                <li class="info-item">Vận chuyển &#38; Giao nhận</li>
+                            </ul>
+                        </div>
+                        <div class="col c-12 m-12 l-4 store-about ">
+                            <h3 class="footer-heading">Về chúng tôi</h3>
+
+                            <ul class="list-about">
+                                <li class="about-product">Thông tin liên hệ : abc&#64;gmail.com</li>
+                                <li class="about-product">Hotline: 00000000</li>
+                                <li class="about-product">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-tiktok"></i>
+                                    <i class="fa-brands fa-youtube"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-group2">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-3 c-12 store-policy">
+                            <h3 class="footer-heading">Chính sách</h3>
+
+                            <ul class="list-policy">
+                                <li class="policy-item">Chính sách đổi trả</li>
+                                <li class="policy-item">Chính sách bảo hành</li>
+                            </ul>
+                        </div>
+
+                        <div class="col l-9 c-12 store-time">
+                            <p class="time-about">Thời gian hoạt động 7:00 - 20:00</p>
+                            <p class="time-about">Xin cảm ơn và rất hân hạnh được phục vụ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <p id="copyright"> &copy; August 2023. All rights reserved</p>
+    </footer>
+</body>
+
+</html>
