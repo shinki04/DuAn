@@ -19,7 +19,21 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
     <!-- Link js -->
-    <script src="./assets/js/navmobile.js"></script>
+    <script>
+        const dropDowns = document.querySelectorAll(".dropdown-overlay");
+        const dropDownToggles = document.querySelectorAll(".dropdown-icon")
+        function acitveClass(a) {
+            console.log(a.nextElementSibling);
+            a.nextElementSibling.classList.add("active");
+        }
+
+        for (let dropDown of dropDowns) {
+            dropDown.addEventListener('click', function () {
+                dropDown.nextElementSibling.classList.toggle("active")
+            })
+        }
+
+    </script>
 
 </head>
 
@@ -239,7 +253,7 @@
 
                             </li>
                             <li class="nav-item col m-2-4 l-2-4  ">
-                                <a href="#" class="nav-link">Ưu đãi</a>
+                                <a href="./voucher.html" class="nav-link">Ưu đãi</a>
                             </li>
                             </li>
                             <li class="nav-item col m-2-4 l-2-4  ">
@@ -263,16 +277,19 @@
             </nav>
         </div>
     </header>
+
+
     <main>
         <div class="introduction-container">
             <div class="grid wide">
                 <div class="row">
                     <div class="introduction-item">
                         <div class="col l-12 ">
-                            <div class="row">
+                            <div class="introduction-row1">
                                 <div class="col l-6 m-12 c-12 ">
                                     <div class="introduction-img">
-                                        <img src="./assets/img/introduction/khai_truong_showroom_donghochinhhang_vincom_ba_trieu_89343b6f07e147abbb098ecffa437051.webp" alt="" >
+                                        <img src="./assets/img/introduction/khai_truong_showroom_donghochinhhang_vincom_ba_trieu_89343b6f07e147abbb098ecffa437051.webp"
+                                            alt="">
 
                                     </div>
                                 </div>
@@ -299,7 +316,7 @@
                 <div class="row">
                     <div class="introduction-item">
                         <div class="col l-12 ">
-                            <div class="row">
+                            <div class="introduction-row2">
                                 <div class=" col l-6 m-12 c-12">
                                     <div class="introduction-about">
                                         <h3 class="introduction-heading">2000-2010</h3>
@@ -314,7 +331,8 @@
 
                                 <div class=" col l-6 m-12 c-12 left-line">
                                     <div class="introduction-img">
-                                        <img src="./assets/img/introduction/Zegarek-Doxa-Blue-Planet-Limited-D198RBU.webp" alt="" >
+                                        <img src="./assets/img/introduction/Zegarek-Doxa-Blue-Planet-Limited-D198RBU.webp"
+                                            alt="">
 
                                     </div>
                                 </div>
@@ -328,10 +346,10 @@
                 <div class="row">
                     <div class="introduction-item">
                         <div class="col l-12 ">
-                            <div class="row">
+                            <div class="introduction-row1">
                                 <div class=" col m-12 l-6 c-12">
                                     <div class="introduction-img">
-                                        <img src="./assets/img/introduction/trienlam.webp" alt="" >
+                                        <img src="./assets/img/introduction/trienlam.webp" alt="">
 
                                     </div>
                                 </div>
@@ -362,7 +380,7 @@
                 <div class="row">
                     <div class="introduction-item">
                         <div class="col l-12 ">
-                            <div class="row">
+                            <div class="introduction-row2">
                                 <div class="col m-12 l-6 c-12 right-line">
                                     <div class="introduction-about">
                                         <h3 class="introduction-heading">2011-2020</h3>
@@ -385,7 +403,7 @@
 
                                 <div class="col m-12 l-6 c-12">
                                     <div class="introduction-img">
-                                        <img src="./assets/img/introduction/dong_ho_thuy_si.jpg" alt="" >
+                                        <img src="./assets/img/introduction/dong_ho_thuy_si.jpg" alt="">
                                     </div>
                                 </div>
 

@@ -1,24 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--todo Fix không nhảy trang khác , link tại trang  -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ</title>
-
+    <title>Document</title>
 
     <!-- Link css font -->
-    <link rel="stylesheet" href="./assets/font/Arima Madurai font/style.css">
-    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="https:cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    <link rel="stylesheet" href="../assets/font/Arima Madurai font/style.css">
+    <link rel="stylesheet" href="../assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--Link css style -->
-    <link rel="stylesheet" href="./assets/css/grid.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+
+    <style>
+        .list-images {
+            display: flex;
+            width: 100%;
+            transition: 0.6s;
+            scroll-behavior: smooth;
+        }
+
+        .list-images img {
+            height: auto;
+            min-width: 100%;
+            object-fit: contain;
+        }
+
+        .banner {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+
+        .banner .btnPrev,
+        .banner .btnNext {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: #000;
+            cursor: pointer;
+        }
+
+        .banner .btnNext {
+            right: 0;
+        }
+       
+
+        .banner .btnPrev {
+            left: 0;
+        }
+
+
+
+        .banner .index-image {
+            position: absolute;
+            bottom: 10px;
+            display: flex;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .banner .index-image .index-item.active {
+            background-color: #ccc;
+        }
+
+        .banner .index-image .index-item {
+            height: 10px;
+            border: solid 2px #999;
+            padding: 10px;
+            margin: 3px;
+            border-radius: 50%;
+        }
+    </style>
 
 
 </head>
@@ -26,19 +88,19 @@
 <body>
     <header>
         <div class="header-container ">
-            
-                <div class="col grid wide">
-                    <div class="row">
-                        <div class="col c-12 m-12 l-12 header-logo">
-                            <a href="./index.html" class="">
-                                <img src="./assets/img/logo.png" alt="" class="header-logo-image" />
-                            </a>
-                        </div>
+
+            <div class="col grid wide">
+                <div class="row">
+                    <div class="col c-12 m-12 l-12 header-logo">
+                        <a href="./index.html" class="">
+                            <img src="../assets/img/logo.png" alt="" class="header-logo-image" />
+                        </a>
                     </div>
                 </div>
-                
+            </div>
 
-        
+
+
 
             <div class="group-1 grid wide ">
                 <div class="row">
@@ -94,14 +156,14 @@
                                 </li>
                                 <li class="nav-mobile-item ">
                                     <div class="dropdown-overlay">
-                                        <a  class="nav-mobile-link dropdown-heading ">Sản phẩm</a>
+                                        <a class="nav-mobile-link dropdown-heading ">Sản phẩm</a>
                                         <i class="ti-angle-down dropdown-icon"></i>
                                     </div>
 
                                     <ul class="subnav-mobile active">
                                         <li class="subnav-mobile-item ">
                                             <div class="dropdown-overlay">
-                                                <p  class="subnav-mobile-link dropdown-heading ">Bộ sưu tập</p>
+                                                <p class="subnav-mobile-link dropdown-heading ">Bộ sưu tập</p>
                                                 <i class="ti-angle-down dropdown-icon"></i>
 
                                             </div>
@@ -115,13 +177,14 @@
                                                         class="subnav-mobile-dropdown-item">Nữ</a>
                                                 </li>
                                                 <li class="subnav-dropdown-item">
-                                                    <a href="./product-couple.html" class="subnav-dropdown-link">Cặp đôi</a>
+                                                    <a href="./product-couple.html" class="subnav-dropdown-link">Cặp
+                                                        đôi</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="subnav-mobile-item   ">
                                             <div class="dropdown-overlay">
-                                                <p  class="subnav-mobile-link dropdown-heading ">Thương hiệu</p>
+                                                <p class="subnav-mobile-link dropdown-heading ">Thương hiệu</p>
                                                 <i class="ti-angle-down dropdown-icon "></i>
                                             </div>
                                             <ul class="subnav-mobile-dropdown">
@@ -169,7 +232,7 @@
                                 </li>
                                 <li class="nav-mobile-item ">
                                     <div class="dropdown-overlay">
-                                        <p  class="nav-mobile-link dropdown-heading">CSKH</p>
+                                        <p class="nav-mobile-link dropdown-heading">CSKH</p>
                                         <i class="ti-angle-down dropdown-icon"></i>
 
                                     </div>
@@ -185,9 +248,9 @@
                                 </li>
                             </ul>
                         </div>
-                    <!--* End nav Mobile -->
-                    
-                    <!--* Begin nav PC -->
+                        <!--* End nav Mobile -->
+
+                        <!--* Begin nav PC -->
                         <ul class="nav ">
                             <li class="nav-item col m-2-4 l-2-4 ">
                                 <a href="./index.html" class="nav-link">Trang chủ</a>
@@ -272,7 +335,6 @@
             </nav>
         </div>
     </header>
-
     <main>
         <div class="container">
             <div class="banner">
@@ -296,55 +358,42 @@
 
             </div>
 
-            <div class="product-container grid wide ">
-
-                <div class="collection">
-                    <p class="collection-about">Bộ sưu tập mới</p>
-                </div>
-                <div class="collection-male">
-                    <p class="collection-about">Nam</p>
-                </div>
-                <div class="collection-female">
-                    <p class="collection-about">Nữ</p>
-                </div>
-                <div class="collection-couple">
-                    <p class="collection-about">Cặp đôi</p>
-                </div>
-
-
-            </div>
-
-
             <div class="brand-famous brand-container">
                 <h2 class="brand-heading">THƯƠNG HIỆU ĐỒNG HỒ NỔI TIẾNG</h2>
-                <div class="grid wide">
-                    <div class="row brand-row1">
-                        <a href="#" class="brand col l-2 m-6 c-12 "><img src="./assets/img/img-famous/Baby-G.webp"
-                                alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Candino.webp"
-                                alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Casio-1.webp"
-                                alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Citizen-1.webp"
-                                alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Citizen-1.webp"
-                                alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img
-                                src="./assets/img/img-famous/Daniel-Wellington.webp" alt=""></a>
-                    </div>
-                    <div class="row brand-row2">
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Baby-G.webp"
-                                alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Candino.webp"
-                                alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Casio-1.webp"
-                                alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Citizen-1.webp"
-                                alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-famous/Citizen-1.webp"
-                                alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img
-                                src="./assets/img/img-famous/Daniel-Wellington.webp" alt=""></a>
+                <div class="list-images">
+
+                    <div class="grid wide">
+                        <div class="row brand-row1">
+    
+                            <a href="#" class="brand col l-2 m-6 c-12 "><img src="../assets/img/img-famous/Baby-G.webp"
+                                    alt=""></a>
+                            <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-famous/Candino.webp"
+                                    alt=""></a>
+                            <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-famous/Casio-1.webp"
+                                    alt=""></a>
+                            <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-famous/Citizen-1.webp"
+                                    alt=""></a>
+                            <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-famous/Citizen-1.webp"
+                                    alt=""></a>
+                            <a href="#" class="brand col l-2 m-6 c-12"><img
+                                    src="../assets/img/img-famous/Daniel-Wellington.webp" alt=""></a>
+    
+    
+                        </div>
+                        <div class="row brand-row2">
+                            <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-famous/Baby-G.webp"
+                                    alt=""></a>
+                            <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-famous/Candino.webp"
+                                    alt=""></a>
+                            <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-famous/Casio-1.webp"
+                                    alt=""></a>
+                            <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-famous/Citizen-1.webp"
+                                    alt=""></a>
+                            <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-famous/Citizen-1.webp"
+                                    alt=""></a>
+                            <a href="#" class="brand col l-2 m-6 c-12"><img
+                                    src="../assets/img/img-famous/Daniel-Wellington.webp" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -354,165 +403,46 @@
                 <h2 class="brand-heading">THƯƠNG HIỆU ĐỒNG HỒ THỤY SĨ</h2>
                 <div class="grid wide">
                     <div class="row brand-row1">
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/Bulova.webp"
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-switzerland/Bulova.webp"
                                 alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/Certina.webp"
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-switzerland/Certina.webp"
                                 alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/CK.webp"
-                                alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img
-                                src="./assets/img/img-switzerland/Claude-Bernard.webp" alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/Doxa.webp"
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-switzerland/CK.webp"
                                 alt=""></a>
                         <a href="#" class="brand col l-2 m-6 c-12"><img
-                                src="./assets/img/img-switzerland/Frederique-Constant.webp" alt=""></a>
+                                src="../assets/img/img-switzerland/Claude-Bernard.webp" alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-switzerland/Doxa.webp"
+                                alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12"><img
+                                src="../assets/img/img-switzerland/Frederique-Constant.webp" alt=""></a>
                     </div>
 
                     <div class="row brand-row2">
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/Longines.webp"
+                        <a href="#" class="brand col l-2 m-6 c-12"><img
+                                src="../assets/img/img-switzerland/Longines.webp" alt=""></a>
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-switzerland/Mido.webp"
                                 alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/Mido.webp"
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-switzerland/Rado.webp"
                                 alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/Rado.webp"
-                                alt=""></a>
-                        <a href="#" class="brand col l-2 m-6 c-12"><img src="./assets/img/img-switzerland/Tissot.webp"
+                        <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-switzerland/Tissot.webp"
                                 alt=""></a>
 
                     </div>
                 </div>
             </div>
         </div>
+
+
+
     </main>
-
-    <footer>
-        <div class="footer-container grid wide">
-            <p class="shop-name">AUGUST</p>
-
-            <div class="footer-store">
-                <div class="grid wide">
-                    <div class="row">
-                        <div class="col c-12 m-6 l-4 store-chain">
-                            <div class="dropdown-overlay">
-                                <h3 class="footer-heading">Hệ thống cửa hàng</h3>
-                                <i class="ti-angle-down dropdown-icon m-0 l-0"></i>
-
-                            </div>
-                            <ul class="list-store dropdown active">
-                                <li class="store-item">TP.Hồ Chí Minh</li>
-                                <li class="store-item">Hà Nội</li>
-                                <li class="store-item">Biên hoà - Bình Dương</li>
-                                <li class="store-item">Đà Nẵng</li>
-                            </ul>
-                        </div>
-                        <div class="col c-12 m-6 l-4 store-info">
-                            <div class="dropdown-overlay">
-                                <h3 class="footer-heading">Thông tin</h3>
-                                <i class="ti-angle-down dropdown-icon m-0 l-0"></i>
-                            </div>
-
-                            
-
-                            <ul class="list-info dropdown active">
-                                <li class="info-item">Thông tin liên hệ</li>
-                                <li class="info-item">Thanh toán - trả góp</li>
-                                <li class="info-item">Liên hệ đối tác doanh nghiệp</li>
-                                <li class="info-item">Vận chuyển &#38; Giao nhận</li>
-                            </ul>
-                        </div>
-                        <div class="col c-12 m-12 l-4 store-about ">
-                            <h3 class="footer-heading">Về chúng tôi</h3>
-
-                            <ul class="list-about">
-                                <li class="about-item">Thông tin liên hệ : abc&#64;gmail.com</li>
-                                <li class="about-item">Hotline: 00000000</li>
-                                <li class="about-item">
-                                    <div class="icon-social">
-                                        <i class="fa-brands fa-facebook"></i>
-                                        <i class="fa-brands fa-instagram"></i>
-                                        <i class="fa-brands fa-tiktok"></i>
-                                        <i class="fa-brands fa-youtube"></i>
-
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-group2">
-                <div class="grid wide">
-                    <div class="row">
-                        <div class="col l-3 m-3 c-12 store-policy">
-                            <h3 class="footer-heading">Chính sách</h3>
-
-                            <ul class="list-policy">
-                                <li class="policy-item">Chính sách đổi trả</li>
-                                <li class="policy-item">Chính sách bảo hành</li>
-                            </ul>
-                        </div>
-
-                        <div class="col l-9 m-9 c-12 store-time">
-                            <p class="time-about">Thời gian hoạt động 7:00 - 20:00</p>
-                            <p class="time-about">Xin cảm ơn và rất hân hạnh được phục vụ</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-        <p id="copyright"> &copy; August 2023. All rights reserved</p>
-    </footer>
-
 </body>
-<script src="./assets/js/dropdown.js"></script>
 <script>
-    
- const listImages = document.querySelector('.list-images')
- const imgs = listImages.getElementsByTagName('img')
- let current = 0
- const length = imgs.length
- console.log(listImages)
- const btnPrev = document.querySelector('.btnPrev')
- const btnNext = document.querySelector('.btnNext')
+    const listImages = document.querySelectorAll('.list-images')
+   listImages.forEach( function e(){
+        console.log(e)
+    })
 
-
- const handleChangeSilde = () => {
-     if (current == length - 1) {
-         current = 0
-         let widthImg = imgs[0].offsetWidth
-         listImages.style.transform = `translateX(0px)`;
-         document.querySelector('.active').classList.remove('active')
-     }
-     else {
-         current++
-         let widthImg = imgs[0].offsetWidth;
-         listImages.style.transform = `translateX(${widthImg * -1 * current}px)`;
-     }
- }
-
- let handleEventChangeSilde = setInterval(handleChangeSilde, 4000)
- btnNext.addEventListener('click', () => {
-     clearInterval(handleEventChangeSilde)
-     handleChangeSilde()
-     handleEventChangeSilde = setInterval(handleChangeSilde, 4000)
-
- })
- btnPrev.addEventListener('click', () => {
-     clearInterval(handleEventChangeSilde)
-     if (current == 0) {
-         current = length - 1
-         let widthImg = imgs[0].offsetWidth;
-         listImages.style.transform = `translateX(${widthImg * -1 * current}px)`;
-     }
-     else {
-         current--
-         let widthImg = imgs[0].offsetWidth;
-         listImages.style.transform = `translateX(${widthImg * -1 * current}px)`;
-     }
-     handleEventChangeSilde = setInterval(handleChangeSilde, 4000)
-
- })
+   
 </script>
+
 </html>
