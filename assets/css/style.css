@@ -373,33 +373,9 @@ main {
     right: 0;
 }
 
-
 .banner .btnPrev {
     left: 0;
 }
-
-
-
-.banner .index-image {
-    position: absolute;
-    bottom: 10px;
-    display: flex;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.banner .index-image .index-item.active {
-    background-color: #ccc;
-}
-
-.banner .index-image .index-item {
-    height: 10px;
-    border: solid 2px #999;
-    padding: 10px;
-    margin: 3px;
-    border-radius: 50%;
-}
-
 /*todo Collection index  */
 
 .product-container {
@@ -942,6 +918,7 @@ footer {
 .sale-container .sale-about {
     text-align: center;
     padding: 2em 0.5em 0;
+    width: 100%;
 }
 
 .sale-container .sale-heading {
@@ -993,6 +970,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
+    justify-content: space-evenly;
+
 }
 
 .introduction-container .introduction-item {
@@ -1074,6 +1054,9 @@ footer {
     text-align: center;
     font-size: larger;
     padding: 10px 0;
+}
+.warranty-form {
+    padding-left: 1rem;
 }
 .warranty-form .form-group{
     color: #000;

@@ -24,13 +24,20 @@
 
 <body>
     <header>
-        <div class="header-container grid ">
-            <div class="row">
-                <a href="./index.html" class="header-logo col l-12 m-12 c-12">
-                    <img src="./assets/img/logo.png" alt="" class="header-logo-image" />
-                </a>
+        <div class="header-container ">
+            
+                <div class="col grid wide">
+                    <div class="row">
+                        <div class="col c-12 m-12 l-12 header-logo">
+                            <a href="./index.html" class="">
+                                <img src="./assets/img/logo.png" alt="" class="header-logo-image" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
 
-            </div>
+        
 
             <div class="group-1 grid wide ">
                 <div class="row">
@@ -59,8 +66,9 @@
 
 
             <nav>
-                <div class="grid header-container">
-                    <div class="row">
+                <div class=" header-container">
+                    <!--*Begin nav Mobile  -->
+                    <div>
                         <div class="menuToggle">
                             <label for="nav-mobile-input"><i class="ti-menu menuBtn"></i>
                             </label>
@@ -85,14 +93,14 @@
                                 </li>
                                 <li class="nav-mobile-item ">
                                     <div class="dropdown-overlay">
-                                        <a href="#" class="nav-mobile-link dropdown-heading ">Sản phẩm</a>
+                                        <a  class="nav-mobile-link dropdown-heading ">Sản phẩm</a>
                                         <i class="ti-angle-down dropdown-icon"></i>
                                     </div>
 
                                     <ul class="subnav-mobile active">
                                         <li class="subnav-mobile-item ">
                                             <div class="dropdown-overlay">
-                                                <a href="#" class="subnav-mobile-link dropdown-heading ">Bộ sưu tập</a>
+                                                <p  class="subnav-mobile-link dropdown-heading ">Bộ sưu tập</p>
                                                 <i class="ti-angle-down dropdown-icon"></i>
 
                                             </div>
@@ -112,7 +120,7 @@
                                         </li>
                                         <li class="subnav-mobile-item   ">
                                             <div class="dropdown-overlay">
-                                                <a href="#" class="subnav-mobile-link dropdown-heading ">Thương hiệu</a>
+                                                <p  class="subnav-mobile-link dropdown-heading ">Thương hiệu</p>
                                                 <i class="ti-angle-down dropdown-icon "></i>
                                             </div>
                                             <ul class="subnav-mobile-dropdown">
@@ -160,25 +168,26 @@
                                 </li>
                                 <li class="nav-mobile-item ">
                                     <div class="dropdown-overlay">
-                                        <a href="#" class="nav-mobile-link dropdown-heading">CSKH</a>
+                                        <p  class="nav-mobile-link dropdown-heading">CSKH</p>
                                         <i class="ti-angle-down dropdown-icon"></i>
 
                                     </div>
                                     <ul class="subnav-mobile-dropdown  ">
-                                        <li class="subnav-mobile-item ">
-                                            <a href="#" class="subnav-mobile-link ">Bảo hành</a>
+                                        <li class="subnav-mobile-dropdown-item">
+                                            <a href="./contact.html" class="subnav-mobile-dropdown-item">Bảo hành</a>
                                         </li>
-                                        <li class="subnav-mobile-item ">
-                                            <a href="#" class="subnav-mobile-link ">Liên hệ</a>
+                                        <li class="subnav-mobile-dropdown-item">
+                                            <a href="./contact.html" class="subnav-mobile-dropdown-item ">Liên hệ</a>
                                         </li>
 
                                     </ul>
                                 </li>
                             </ul>
                         </div>
-
-
-                        <ul class="nav row ">
+                    <!--* End nav Mobile -->
+                    
+                    <!--* Begin nav PC -->
+                        <ul class="nav ">
                             <li class="nav-item col m-2-4 l-2-4 ">
                                 <a href="./index.html" class="nav-link">Trang chủ</a>
                             </li>
@@ -186,8 +195,8 @@
                                 <a href="./introduction.html" class="nav-link">Giới thiệu</a>
                             </li>
                             <li class="nav-item col m-2-4 l-2-4  ">
-                                <p href="#" class="nav-link ">Sản phẩm</p>
-                                <ul class="subnav grid row ">
+                                <a href="#" class="nav-link">Sản phẩm</a>
+                                <ul class="subnav">
                                     <li class="subnav-item col l-4 m-4">
                                         <a href="#" class="subnav-link ">Bộ sưu tập</a>
                                         <ul class="subnav-dropdown">
@@ -245,10 +254,10 @@
                                 <a href="#" class="nav-link">CSKH</a>
                                 <ul class="subnav grid row ">
                                     <li class="subnav-item col l-6 m-6">
-                                        <a href="#" class="subnav-link ">Bảo hành</a>
+                                        <a href="./contact.html" class="subnav-link ">Bảo hành</a>
                                     </li>
                                     <li class="subnav-item col l-6 m-6">
-                                        <a href="#" class="subnav-link ">Liên hệ</a>
+                                        <a href="./contact.html" class="subnav-link ">Liên hệ</a>
                                     </li>
 
                                 </ul>
