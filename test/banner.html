@@ -53,7 +53,7 @@
         .banner .btnNext {
             right: 0;
         }
-       
+
 
         .banner .btnPrev {
             left: 0;
@@ -338,23 +338,18 @@
     <main>
         <div class="container">
             <div class="banner">
-
                 <div class="list-images">
-                    <img src="../assets/img/Sale/11.11.png" alt="">
-                    <img src="../assets/img/Sale/birthday.png" alt="">
-                    <img src="../assets/img/Sale/christmas.png" alt="">
+                    <img class="index-img" src="../assets/img/Sale/11.11.png" alt="">
+                    <img class="index-img" src="../assets/img/Sale/birthday.png" alt="">
+                    <img class="index-img" src="../assets/img/Sale/christmas.png" alt="">
                 </div>
-
                 <div class="btns">
                     <i class="ti-angle-right btn btnNext"></i>
                     <i class="ti-angle-left btn btnPrev"></i>
                 </div>
-                <div class="index-image">
-                    <div class="index-item"></div>
-                    <div class="index-item"></div>
-                    <div class="index-item"></div>
-                    <div class="index-item"></div>
-                </div>
+
+             
+
 
             </div>
 
@@ -364,21 +359,23 @@
 
                     <div class="grid wide">
                         <div class="row brand-row1">
-    
+
+
                             <a href="#" class="brand col l-2 m-6 c-12 "><img src="../assets/img/img-famous/Baby-G.webp"
                                     alt=""></a>
                             <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-famous/Candino.webp"
                                     alt=""></a>
                             <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-famous/Casio-1.webp"
                                     alt=""></a>
-                            <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-famous/Citizen-1.webp"
-                                    alt=""></a>
-                            <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-famous/Citizen-1.webp"
-                                    alt=""></a>
+                            <a href="#" class="brand col l-2 m-6 c-12"><img
+                                    src="../assets/img/img-famous/Citizen-1.webp" alt=""></a>
+                            <a href="#" class="brand col l-2 m-6 c-12"><img
+                                    src="../assets/img/img-famous/Citizen-1.webp" alt=""></a>
                             <a href="#" class="brand col l-2 m-6 c-12"><img
                                     src="../assets/img/img-famous/Daniel-Wellington.webp" alt=""></a>
-    
-    
+
+
+
                         </div>
                         <div class="row brand-row2">
                             <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-famous/Baby-G.webp"
@@ -387,15 +384,20 @@
                                     alt=""></a>
                             <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-famous/Casio-1.webp"
                                     alt=""></a>
-                            <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-famous/Citizen-1.webp"
-                                    alt=""></a>
-                            <a href="#" class="brand col l-2 m-6 c-12"><img src="../assets/img/img-famous/Citizen-1.webp"
-                                    alt=""></a>
+                            <a href="#" class="brand col l-2 m-6 c-12"><img
+                                    src="../assets/img/img-famous/Citizen-1.webp" alt=""></a>
+                            <a href="#" class="brand col l-2 m-6 c-12"><img
+                                    src="../assets/img/img-famous/Citizen-1.webp" alt=""></a>
                             <a href="#" class="brand col l-2 m-6 c-12"><img
                                     src="../assets/img/img-famous/Daniel-Wellington.webp" alt=""></a>
                         </div>
                     </div>
+                    <div class="btns">
+                        <i class="ti-angle-right btn btnNext"></i>
+                        <i class="ti-angle-left btn btnPrev"></i>
+                    </div>
                 </div>
+
             </div>
 
 
@@ -437,12 +439,42 @@
     </main>
 </body>
 <script>
+    
     const listImages = document.querySelectorAll('.list-images')
-   listImages.forEach( function e(){
-        console.log(e)
-    })
 
-   
+    for (let item of listImages) {
+        console.log(item)
+        const imgs = item.getElementsByTagName('img')
+        //const imgs = item.getElementsByClassName('index-img')
+        console.log(imgs)
+        let current = 0
+        const length = imgs.length
+        const btnPrev = item.querySelector('.btnPrev')
+        const btnNext = item.querySelector('.btnNext')
+        console.log(btnNext)
+        console.log(btnPrev)
+
+        const handleChangeSilde = () => {
+            if (current == length - 1) {
+                current = 0
+                let widthImg = imgs[0].offsetWidth
+                item.style.transform = `translateX(0px)`;
+                item.querySelector('.active').classList.remove('active')
+            }
+            else {
+                current++
+                let widthImg = imgs[0].offsetWidth;
+                item.style.transform = `translateX(${widthImg * -1 * current}px)`;
+            }
+        }
+
+        let handleEventChangeSilde = setInterval(handleChangeSilde, 4000)
+
+
+
+    }
+
+
 </script>
 
 </html>

@@ -363,9 +363,10 @@ main {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: #000;
     cursor: pointer;
+    padding: 1rem;
 }
 
 .banner .btnNext {
@@ -478,6 +479,8 @@ main {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    max-width: calc(100% - 1rem);
+
 }
 
 .brand-container .brand-row1 {
@@ -977,7 +980,7 @@ footer {
 
 
 
-.introduction-container {}
+
 
 .introduction-container img {
     width: 20rem;
